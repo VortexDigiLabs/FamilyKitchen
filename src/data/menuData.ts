@@ -33,7 +33,7 @@ export const menuItems: MenuItem[] = [
     description: "Tomato base and loads of 3 cheeses.",
     price: 65,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text-to-image?prompt=Artisan%20Margherita%20pizza%20San%20Marzano%20tomato%20buffalo%20mozzarella%20fresh%20basil%20extra%20virgin%20olive%20oil%20wood-fired%20rustic%20restaurant%20quality&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "2",
@@ -41,7 +41,7 @@ export const menuItems: MenuItem[] = [
     description: "Ham, pineapple & 3 cheeses.",
     price: 75,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Hawaiian%20Delight%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "3",
@@ -49,7 +49,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy bacon & 3 cheeses.",
     price: 80,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bacon%20%26%20Cheese%20Feast%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "4",
@@ -57,7 +57,7 @@ export const menuItems: MenuItem[] = [
     description: "Creamy chicken mayo & 3 cheeses.",
     price: 85,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Chicken%20Mayo%20Supreme%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "5",
@@ -65,7 +65,7 @@ export const menuItems: MenuItem[] = [
     description: "BBQ chicken with melted 3 cheeses.",
     price: 85,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=BBQ%20Chicken%20Pizza%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "6",
@@ -73,7 +73,7 @@ export const menuItems: MenuItem[] = [
     description: "Bolognese mince & 3 cheeses.",
     price: 85,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Italian%20Stallion%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "7",
@@ -81,7 +81,7 @@ export const menuItems: MenuItem[] = [
     description: "Spicy mince, peppers & 3 cheeses.",
     price: 90,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Mexican%20Fiesta%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "8",
@@ -89,7 +89,7 @@ export const menuItems: MenuItem[] = [
     description: "Salami & extra 3 cheeses.",
     price: 90,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Salami%20Passion%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "9",
@@ -97,7 +97,7 @@ export const menuItems: MenuItem[] = [
     description: "Chicken strips, sweet chilli sauce & feta.",
     price: 95,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Sweet%20Chilli%20Chicken%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "10",
@@ -105,7 +105,7 @@ export const menuItems: MenuItem[] = [
     description: "Bacon, feta & crushed garlic.",
     price: 95,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bacon%20Garlic%20Feta%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "11",
@@ -113,7 +113,7 @@ export const menuItems: MenuItem[] = [
     description: "BBQ rib strips with 3 cheeses.",
     price: 100,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Rib%20%26%20BBQ%20Blast%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "12",
@@ -121,7 +121,7 @@ export const menuItems: MenuItem[] = [
     description: "Steak strips, onion & mushroom.",
     price: 100,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Steakhouse%20Special%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "13",
@@ -129,7 +129,7 @@ export const menuItems: MenuItem[] = [
     description: "Russian, ham, cheese griller, bacon & 3 cheeses.",
     price: 110,
     category: "Classic Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=The%20Family%20Kitchen%20Beast%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Gourmet Pizzas
@@ -139,7 +139,7 @@ export const menuItems: MenuItem[] = [
     description: "Ham, bacon, mushroom, peppers, olives & 3 cheeses.",
     price: 105,
     category: "Gourmet Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Full%20House%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "15",
@@ -147,7 +147,7 @@ export const menuItems: MenuItem[] = [
     description: "Mozzarella, cheddar & feta.",
     price: 95,
     category: "Gourmet Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Triple%20Cheese%20Explosion%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "16",
@@ -155,7 +155,7 @@ export const menuItems: MenuItem[] = [
     description: "Peri peri chicken with peppers & 3 cheeses.",
     price: 95,
     category: "Gourmet Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Chicken%20Peri%20Peri%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "17",
@@ -163,7 +163,7 @@ export const menuItems: MenuItem[] = [
     description: "Egg, bacon, 3 cheeses & grilled tomato.",
     price: 90,
     category: "Gourmet Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Breakfast%20Pizza%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "18",
@@ -171,7 +171,7 @@ export const menuItems: MenuItem[] = [
     description: "Mushroom, peppers, onion, olives, feta & 3 cheeses.",
     price: 85,
     category: "Gourmet Pizzas",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Veggie%20Lovers%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Toasties
@@ -180,49 +180,49 @@ export const menuItems: MenuItem[] = [
     name: "Cheese Toastie",
     price: 15,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Cheese%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "20",
     name: "Ham & Cheese Toastie",
     price: 25,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Ham%20%26%20Cheese%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "21",
     name: "Bacon & Cheese Toastie",
     price: 28,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bacon%20%26%20Cheese%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "22",
     name: "Bacon Egg & Cheese Toastie",
     price: 35,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bacon%20Egg%20%26%20Cheese%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "23",
     name: "Beef Burger Toastie",
     price: 35,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Beef%20Burger%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "24",
     name: "Chicken Burger Toastie",
     price: 30,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Chicken%20Burger%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "25",
     name: "Bacon & Egg Toastie",
     price: 28,
     category: "Toasties",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bacon%20%26%20Egg%20Toastie%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
   },
 
   // Rolls
@@ -231,28 +231,28 @@ export const menuItems: MenuItem[] = [
     name: "Wors Roll & Chips",
     price: 35,
     category: "Rolls",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Wors%20Roll%20%26%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "27",
     name: "Wors Roll (Standalone)",
     price: 35,
     category: "Rolls",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Wors%20Roll%20(Standalone)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "28",
     name: "Russian Roll & Chips",
     price: 53,
     category: "Rolls",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Russian%20Roll%20%26%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "29",
     name: "Russian Roll (Standalone)",
     price: 38,
     category: "Rolls",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Russian%20Roll%20(Standalone)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
 
   // Grilled Chicken Meals
@@ -261,21 +261,21 @@ export const menuItems: MenuItem[] = [
     name: "Grilled Chicken 1/4 with Chips",
     price: 42,
     category: "Grilled Chicken Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Grilled%20Chicken%201%2F4%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "31",
     name: "Grilled Chicken 1/4 with Pap",
     price: 40,
     category: "Grilled Chicken Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Grilled%20Chicken%201%2F4%20with%20Pap%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "32",
     name: "Grilled Chicken 1/4 with Rice",
     price: 42,
     category: "Grilled Chicken Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Grilled%20Chicken%201%2F4%20with%20Rice%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
 
   // Everyday Mains
@@ -285,7 +285,7 @@ export const menuItems: MenuItem[] = [
     description: "Served with 1 Egg and Crinkle Cut Chips.",
     price: 120,
     category: "Everyday Mains",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=300g%20Aged%20Ribeye%20Steak%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "34",
@@ -293,7 +293,7 @@ export const menuItems: MenuItem[] = [
     description: "Served with 1 Egg and Crinkle Cut Chips.",
     price: 85,
     category: "Everyday Mains",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=250g%20Sirloin%20Steak%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "35",
@@ -301,7 +301,7 @@ export const menuItems: MenuItem[] = [
     description: "Beef burger patties, eggs, fried onions, bacon bits, creamed & grated cheese, sliced gherkins, lettuce, tomatoes, and signature Family Kitchen Sauce.",
     price: 150,
     category: "Everyday Mains",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=30cm%20Monster%20Burger%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Pizza/Sides Extras
@@ -310,42 +310,42 @@ export const menuItems: MenuItem[] = [
     name: "Extra 3 Cheeses",
     price: 15,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Extra%203%20Cheeses%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "37",
     name: "Feta Cheese Portion",
     price: 15,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Feta%20Cheese%20Portion%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "38",
     name: "Jalapeños",
     price: 10,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Jalape%C3%B1os%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "39",
     name: "Crushed Garlic",
     price: 10,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Crushed%20Garlic%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "40",
     name: "Chips Portion",
     price: 20,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Chips%20Portion%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "41",
     name: "2L Colldrink",
     price: 35,
     category: "Pizza/Sides Extras",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=2L%20Colldrink%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Kiddos Meals
@@ -355,7 +355,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Beef%20Burger%20Platter%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "43",
@@ -363,7 +363,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Chicken%20Burger%20Platter%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "44",
@@ -371,7 +371,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Chicken%20Nuggets%20Platter%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "45",
@@ -379,7 +379,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Chicken%20Pops%20Platter%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
 
   // Kiddos Pizza Combos
@@ -389,7 +389,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
     category: "Kiddos Pizza Combos",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Bacon%20%26%20Cheese%20Pizza%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "47",
@@ -397,7 +397,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
     category: "Kiddos Pizza Combos",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20BBQ%20Chicken%20Pizza%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "48",
@@ -405,7 +405,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
     category: "Kiddos Pizza Combos",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Tomato%20%26%20Cheese%20Pizza%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "49",
@@ -413,7 +413,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
     category: "Kiddos Pizza Combos",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kiddos%20Hawaiian%20Pizza%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Regular Combos
@@ -423,7 +423,7 @@ export const menuItems: MenuItem[] = [
     description: "Any 2 Regular Pizzas + 2-Litre Pepsi.",
     price: 200,
     category: "Regular Combos",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Double%20Pizza%20%26%202L%20Beverage%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
 
   // Limited Stock Promotions (Valid 26.05-05.06)
@@ -433,91 +433,91 @@ export const menuItems: MenuItem[] = [
     description: "2 x Pizzas (Bacon & Cheese Feast or BBQ Chicken) + 2L Pepsi.",
     price: 200,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Bulk%20Pizza%20Combo%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "52",
     name: "4 x Beef Burgers with Chips",
     price: 220,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Beef%20Burgers%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "53",
     name: "4 x Beef Burgers (No Chips)",
     price: 200,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Beef%20Burgers%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "54",
     name: "4 x Chicken Burgers with Chips",
     price: 220,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Chicken%20Burgers%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "55",
     name: "4 x Chicken Burgers (No Chips)",
     price: 200,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Chicken%20Burgers%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "56",
     name: "1 x Monster Burger with Chips",
     price: 180,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=1%20x%20Monster%20Burger%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "57",
     name: "1 x Monster Burger (No Chips)",
     price: 150,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=1%20x%20Monster%20Burger%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "58",
     name: "1 x Mini Monster Burger with Chips",
     price: 130,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=1%20x%20Mini%20Monster%20Burger%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "59",
     name: "1 x Mini Monster Burger (No Chips)",
     price: 100,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=1%20x%20Mini%20Monster%20Burger%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "60",
     name: "4 x Wors Rolls with Chips",
     price: 180,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Wors%20Rolls%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "61",
     name: "4 x Wors Rolls (No Chips)",
     price: 145,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=4%20x%20Wors%20Rolls%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "62",
     name: "3 x Kota with Chips",
     price: 125,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=3%20x%20Kota%20with%20Chips%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "63",
     name: "3 x Kota (No Chips)",
     price: 95,
     category: "Limited Stock Promotions",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=3%20x%20Kota%20(No%20Chips)%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
 
   // Friday Braai Day Special
@@ -527,7 +527,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Grilled Chicken Piece + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Braai%20Pack%201%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "65",
@@ -535,7 +535,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Boerewors Coil + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Braai%20Pack%202%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "66",
@@ -543,7 +543,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Pork Chop + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Braai%20Pack%203%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "67",
@@ -551,7 +551,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Beef Brisket Cut + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Braai%20Pack%204%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
   },
 
   // Sunday Lunch & Dessert
@@ -561,7 +561,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional Homemade Meatloaf, White Rice, Baked Potato Wedges, Creamy Broccoli & Cauliflower.",
     price: 60,
     category: "Sunday Lunch & Dessert",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Sunday%20Roast%20Platter%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "69",
@@ -569,6 +569,6 @@ export const menuItems: MenuItem[] = [
     description: "Classic Malva Pudding served with hot custard.",
     price: 25,
     category: "Sunday Lunch & Dessert",
-    image: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Traditional%20Dessert%20Add-on%20food%20restaurant%20quality%20rustic%20wood-fired&image_size=square_hd"
+    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80"
   }
 ];

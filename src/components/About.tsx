@@ -15,10 +15,10 @@ export default function About() {
             <FadeIn direction="right">
               <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none">
                 <img
-                  src="https://coresg-normal.trae.ai/api/ide/v1/text-to-image?prompt=Premium%20dry-aged%20beef%20butcher%20shop%20restaurant%20quality%20rustic&image-size=square-hd"
+                  src="https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780074150/zxm9nnoytf8xiqnfpnxx.jpg"
                   alt="Premium dry-aged beef"
                   className="w-full h-full object-cover rounded-sm"
-                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
                 {/* Decorative border */}
                 <div className="absolute -inset-4 border rounded-sm -z-10 hidden md:block translate-x-8 translate-y-8" style={{
@@ -58,11 +58,11 @@ export default function About() {
             <FadeIn delay={0.4}>
               <div className="flex items-center gap-6">
                 <img
-                  src="https://coresg-normal.trae.ai/api/ide/v1/text-to-image?prompt=Professional%20butcher%20and%20chef%20portrait%20restaurant%20quality&image-size=square"
+                  src="https://images.unsplash.com/photo-1577214714282-30d5d270c438?auto=format&fit=crop&w=600&q=80"
                   alt="Head Butcher & Chef"
                   className="w-16 h-16 rounded-full object-cover border-2"
                   style={{ borderColor: "rgba(212, 175, 55, 0.5)" }}
-                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
                 <div>
                   <p className="font-serif text-xl" style={{ color: "var(--text-primary)" }}>The Family</p>

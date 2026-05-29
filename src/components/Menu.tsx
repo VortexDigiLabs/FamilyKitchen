@@ -68,7 +68,7 @@ export default function Menu() {
                       src={item.image}
                       alt={item.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      referrerPolicy="no-referrer"
+                      crossOrigin="anonymous"
                     />
                     {item.isMealOfDay && (
                       <div className="absolute top-2 left-2 bg-gold-400 text-charcoal-950 text-[10px] font-bold uppercase tracking-[0.15em] px-2 py-1 rounded-sm">
