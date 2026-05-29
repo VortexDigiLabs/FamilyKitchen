@@ -1,16 +1,60 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Family Kitchen | Premium Home Cooked Meals</title>
-    <link rel="icon" type="image/jpeg" href="https://huprbedahpwszatolkce.supabase.co/storage/v1/object/public/Family%20Kitchen/autumn-byteplus_a_I_only_need_the_logo.jpeg" />
+    <title>Family Restaurant | Fine Dining</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#FAF8F5] text-[#1A1A1A] antialiased selection:bg-[#8B2F24] selection:text-white">
+  <body>
     <div id="root"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Family Kitchen",
+        "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop",
+        "@id": "",
+        "url": "",
+        "telephone": "",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "509 Pretoria Road, Shop nr 13, Fairleads",
+          "addressLocality": "Benoni",
+          "postalCode": "1501",
+          "addressCountry": "ZA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -26.155,
+          "longitude": 28.343
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "08:30",
+            "closes": "16:00"
+          }
+        ],
+        "servesCuisine": "home-cooked family meals, professional butcher-grade catering"
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
