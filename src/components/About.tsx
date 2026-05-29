@@ -1,29 +1,38 @@
-import FadeIn from './FadeIn';
+import FadeIn from "./FadeIn";
+import { useTheme } from "../context/ThemeContext";
 
 export default function About() {
+  const { theme } = useTheme();
   return (
-    <section id="about" className="py-24 md:py-32 bg-charcoal-950 relative">
+    <section id="about" className="py-24 md:py-32 relative" style={{
+      backgroundColor: "var(--bg-primary)"
+    }}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
             <FadeIn direction="right">
               <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none">
                 <img
-                  src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2070&auto=format&fit=crop"
+                  src="https://coresg-normal.trae.ai/api/ide/v1/text-to-image?prompt=Premium%20dry-aged%20beef%20butcher%20shop%20restaurant%20quality%20rustic&image-size=square-hd"
                   alt="Premium dry-aged beef"
                   className="w-full h-full object-cover rounded-sm"
                   referrerPolicy="no-referrer"
                 />
                 {/* Decorative border */}
-                <div className="absolute -inset-4 border border-gold-400/30 rounded-sm -z-10 hidden md:block translate-x-8 translate-y-8"></div>
+                <div className="absolute -inset-4 border rounded-sm -z-10 hidden md:block translate-x-8 translate-y-8" style={{
+                  borderColor: "rgba(212, 175, 55, 0.3)"
+                }} />
               </div>
             </FadeIn>
-            
-            <FadeIn direction="up" delay={0.3} className="absolute -bottom-8 -left-8 md:-left-12 bg-charcoal-900 p-6 md:p-8 border border-white/5 shadow-2xl max-w-[250px]">
+
+            <FadeIn direction="up" delay={0.3} className="absolute -bottom-8 -left-8 md:-left-12 p-6 md:p-8 border shadow-2xl max-w-[250px]" style={{
+              backgroundColor: "var(--bg-secondary)",
+              borderColor: "var(--border-color)"
+            }}>
               <p className="font-serif text-4xl text-gold-400 mb-2">Wood-Fired</p>
-              <p className="text-sm uppercase tracking-widest text-gray-400">Artisan Craft</p>
+              <p className="text-sm uppercase tracking-widest" style={{ color: "var(--text-secondary)" }}>Artisan Craft</p>
             </FadeIn>
           </div>
 
@@ -31,31 +40,32 @@ export default function About() {
           <div className="order-1 lg:order-2">
             <FadeIn>
               <span className="text-gold-400 text-sm uppercase tracking-[0.2em] mb-4 block">Our Heritage</span>
-              <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">
+              <h2 className="text-4xl md:text-5xl mb-8 leading-tight">
                 Heart of the Home & <br />
-                <span className="italic text-gray-400">The Butcher's Edge</span>
+                <span className="italic" style={{ color: "var(--text-secondary)" }}>The Butcher's Edge</span>
               </h2>
             </FadeIn>
-            
+
             <FadeIn delay={0.2}>
-              <p className="text-gray-400 mb-6 font-light leading-relaxed text-lg">
-                Rooted in the traditions of our Oumas and Mas, Family Kitchen celebrates the essence of home-cooked heritage. We bring the warmth of the family hearth to your table, where every recipe tells a story of generations past.
+              <p className="mb-6 font-light leading-relaxed text-lg" style={{ color: "var(--text-secondary)" }}>
+                Rooted in the traditions of our Oumas and Mas, Family Kitchen celebrates the essence of home-cooked heritage. Every recipe tells a story of generations past, freshly prepared for you to enjoy at our shop.
               </p>
-              <p className="text-gray-400 mb-10 font-light leading-relaxed text-lg">
-                Beyond the comforting classics, we pride ourselves on <strong className="text-white">The Butcher's Edge</strong>. Drawing from a professional butchery background, we source and age the finest cuts. Whether it's our Signature 30cm Monster Burgers or our beautifully marbled Aged Ribeye, you are tasting the pinnacle of meat craftsmanship.
+              <p className="mb-10 font-light leading-relaxed text-lg" style={{ color: "var(--text-secondary)" }}>
+                Beyond the comforting classics, we pride ourselves on <strong style={{ color: "var(--text-primary)" }}>The Butcher's Edge</strong>. Drawing from a professional butchery background, we source and age the finest cuts. Whether it's our Signature 30cm Monster Burgers or our beautifully marbled Aged Ribeye, you are tasting the pinnacle of meat craftsmanship.
               </p>
             </FadeIn>
-            
+
             <FadeIn delay={0.4}>
               <div className="flex items-center gap-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=200&auto=format&fit=crop" 
-                  alt="Head Butcher & Chef" 
-                  className="w-16 h-16 rounded-full object-cover border-2 border-gold-400/50"
+                <img
+                  src="https://coresg-normal.trae.ai/api/ide/v1/text-to-image?prompt=Professional%20butcher%20and%20chef%20portrait%20restaurant%20quality&image-size=square"
+                  alt="Head Butcher & Chef"
+                  className="w-16 h-16 rounded-full object-cover border-2"
+                  style={{ borderColor: "rgba(212, 175, 55, 0.5)" }}
                   referrerPolicy="no-referrer"
                 />
                 <div>
-                  <p className="font-serif text-xl text-white">The Family</p>
+                  <p className="font-serif text-xl" style={{ color: "var(--text-primary)" }}>The Family</p>
                   <p className="text-sm text-gold-400 uppercase tracking-wider">Master Butchers & Chefs</p>
                 </div>
               </div>

@@ -3,22 +3,51 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
-  
+
   --color-gold-400: #d4af37;
   --color-gold-500: #aa8c2c;
   --color-gold-600: #856d22;
-  
+
   --color-charcoal-800: #1f1f1f;
   --color-charcoal-900: #111111;
   --color-charcoal-950: #0a0a0a;
 }
 
 @layer base {
-  body {
-    @apply bg-charcoal-950 text-gray-300 font-sans antialiased selection:bg-gold-500 selection:text-white;
+  /* Dark theme (default) */
+  :root,
+  .dark {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111111;
+    --bg-tertiary: #1f1f1f;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a0a0a0;
+    --border-color: rgba(255, 255, 255, 0.1);
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-white;
+
+  /* Light theme */
+  .light {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e5e5e5;
+    --text-primary: #1f1f1f;
+    --text-secondary: #525252;
+    --border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    @apply font-sans antialiased selection:bg-gold-500 selection:text-white;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+    color: var(--text-primary);
   }
 }
