@@ -1,16 +1,59 @@
+import { useEffect, useRef, useState } from "react";
 import FadeIn from "./FadeIn";
 import { useTheme } from "../context/ThemeContext";
 
 export default function Hero() {
   const { theme } = useTheme();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playCount, setPlayCount] = useState(0);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Handle 2-play audio limit
+    const handleEnded = () => {
+      setPlayCount((prev) => {
+        const nextCount = prev + 1;
+        if (nextCount >= 2) {
+          video.muted = true;
+        }
+        return nextCount;
+      });
+    };
+
+    // Intersection Observer to stop video when scrolling away
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {
+            // Autoplay with audio might be blocked by browser until interaction
+            console.log("Autoplay blocked");
+          });
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    video.addEventListener("ended", handleEnded);
+    observer.observe(video);
+
+    return () => {
+      video.removeEventListener("ended", handleEnded);
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
         <video
-          src="https://res.cloudinary.com/ddfuc0ktg/video/upload/v1780069680/ror1yazqzgqbhjctnqe9.mp4"
+          ref={videoRef}
+          src="https://res.cloudinary.com/ddfuc0ktg/video/upload/v1780138129/xfmdkg3imxd15vv7g3jh.mp4"
           autoPlay
-          muted
           loop
           playsInline
           className="w-full h-full object-cover object-center"
