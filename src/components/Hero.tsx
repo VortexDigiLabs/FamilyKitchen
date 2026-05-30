@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import FadeIn from "./FadeIn";
 import { useTheme } from "../context/ThemeContext";
+import { Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
   const { theme } = useTheme();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playCount, setPlayCount] = useState(0);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -17,6 +19,7 @@ export default function Hero() {
         const nextCount = prev + 1;
         if (nextCount >= 2) {
           video.muted = true;
+          setIsMuted(true);
         }
         return nextCount;
       });
@@ -26,9 +29,8 @@ export default function Hero() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {
-            // Autoplay with audio might be blocked by browser until interaction
-            console.log("Autoplay blocked");
+          video.play().catch((error) => {
+            console.log("Autoplay blocked:", error);
           });
         } else {
           video.pause();
@@ -40,11 +42,27 @@ export default function Hero() {
     video.addEventListener("ended", handleEnded);
     observer.observe(video);
 
+    // Initial attempt to play
+    video.play().catch(() => {
+      console.log("Initial autoplay blocked - waiting for interaction");
+    });
+
     return () => {
       video.removeEventListener("ended", handleEnded);
       observer.disconnect();
     };
   }, []);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      const newMuteState = !videoRef.current.muted;
+      videoRef.current.muted = newMuteState;
+      setIsMuted(newMuteState);
+      if (!newMuteState) {
+        videoRef.current.play();
+      }
+    }
+  };
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -54,6 +72,7 @@ export default function Hero() {
           ref={videoRef}
           src="https://res.cloudinary.com/ddfuc0ktg/video/upload/v1780138129/xfmdkg3imxd15vv7g3jh.mp4"
           autoPlay
+          muted={isMuted}
           loop
           playsInline
           className="w-full h-full object-cover object-center"
@@ -64,6 +83,24 @@ export default function Hero() {
             : "linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 1))"
         }} />
       </div>
+
+      {/* Mute/Unmute Toggle Button */}
+      <button
+        onClick={toggleMute}
+        className="absolute bottom-24 right-10 z-20 p-4 rounded-full border transition-all duration-300 hover:scale-110"
+        style={{
+          backgroundColor: "rgba(212, 175, 55, 0.1)",
+          borderColor: "rgba(212, 175, 55, 0.5)",
+          color: "var(--gold-400)"
+        }}
+        aria-label={isMuted ? "Unmute video" : "Mute video"}
+      >
+        {isMuted ? (
+          <VolumeX className="w-6 h-6 text-gold-400" />
+        ) : (
+          <Volume2 className="w-6 h-6 text-gold-400" />
+        )}
+      </button>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
         <FadeIn delay={0.2}>
