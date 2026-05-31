@@ -33,7 +33,7 @@ export const menuItems: MenuItem[] = [
     description: "Tomato base and loads of 3 cheeses.",
     price: 65,
     category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "2",
@@ -121,7 +121,7 @@ export const menuItems: MenuItem[] = [
     description: "Steak strips, onion & mushroom.",
     price: 100,
     category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "13",
@@ -129,7 +129,7 @@ export const menuItems: MenuItem[] = [
     description: "Russian, ham, cheese griller, bacon & 3 cheeses.",
     price: 110,
     category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
   },
 
   // Gourmet Pizzas
@@ -180,28 +180,28 @@ export const menuItems: MenuItem[] = [
     name: "Cheese Toastie",
     price: 15,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "20",
     name: "Ham & Cheese Toastie",
     price: 25,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1538220856186-0be0e085984d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "21",
     name: "Bacon & Cheese Toastie",
     price: 28,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1619096279129-9675f4ab3640?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "22",
     name: "Bacon Egg & Cheese Toastie",
     price: 35,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "23",
@@ -245,14 +245,14 @@ export const menuItems: MenuItem[] = [
     name: "Russian Roll & Chips",
     price: 53,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1627059313773-aa4cd1a403c9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "29",
     name: "Russian Roll (Standalone)",
     price: 38,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80"
   },
 
   // Grilled Chicken Meals
@@ -268,14 +268,14 @@ export const menuItems: MenuItem[] = [
     name: "Grilled Chicken 1/4 with Pap",
     price: 40,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "32",
     name: "Grilled Chicken 1/4 with Rice",
     price: 42,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80"
   },
 
   // Everyday Mains
@@ -285,7 +285,7 @@ export const menuItems: MenuItem[] = [
     description: "Served with 1 Egg and Crinkle Cut Chips.",
     price: 120,
     category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "34",
@@ -363,7 +363,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1627662236973-4f8259fa2441?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "44",
@@ -379,7 +379,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80"
   },
 
   // Kiddos Pizza Combos
@@ -404,15 +404,15 @@ export const menuItems: MenuItem[] = [
     name: "Kiddos Tomato & Cheese Pizza Combo",
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
-    category: "Kiddos Pizza Combos",
-    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+    category: "Kiddos Tomato & Cheese Pizza Combo",
+    image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "49",
     name: "Kiddos Hawaiian Pizza Combo",
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
-    category: "Kiddos Pizza Combos",
+    category: "Kiddos Hawaiian Pizza Combo",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
   },
 
@@ -475,7 +475,7 @@ export const menuItems: MenuItem[] = [
     name: "1 x Monster Burger (No Chips)",
     price: 150,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "58",
@@ -489,7 +489,7 @@ export const menuItems: MenuItem[] = [
     name: "1 x Mini Monster Burger (No Chips)",
     price: 100,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "60",
@@ -543,7 +543,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Pork Chop + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "67",
@@ -551,7 +551,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Beef Brisket Cut + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
 
   // Sunday Lunch & Dessert
@@ -561,7 +561,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional Homemade Meatloaf, White Rice, Baked Potato Wedges, Creamy Broccoli & Cauliflower.",
     price: 60,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "69",
@@ -569,6 +569,6 @@ export const menuItems: MenuItem[] = [
     description: "Classic Malva Pudding served with hot custard.",
     price: 25,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
   }
 ];
