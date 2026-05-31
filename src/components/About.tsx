@@ -27,13 +27,7 @@ export default function About() {
               </div>
             </FadeIn>
 
-            <FadeIn direction="up" delay={0.3} className="absolute -bottom-8 -left-8 md:-left-12 p-6 md:p-8 border shadow-2xl max-w-[250px]" style={{
-              backgroundColor: "var(--bg-secondary)",
-              borderColor: "var(--border-color)"
-            }}>
-              <p className="font-serif text-4xl text-gold-400 mb-2">Wood-Fired</p>
-              <p className="text-sm uppercase tracking-widest" style={{ color: "var(--text-secondary)" }}>Artisan Craft</p>
-            </FadeIn>
+
           </div>
 
           {/* Text Side */}
@@ -58,11 +52,10 @@ export default function About() {
             <FadeIn delay={0.4}>
               <div className="flex items-center gap-6">
                 <img
-                  src="https://images.unsplash.com/photo-1577214714282-30d5d270c438?auto=format&fit=crop&w=600&q=80"
+                  src="/butcher_profile.png"
                   alt="Head Butcher & Chef"
                   className="w-16 h-16 rounded-full object-cover border-2"
                   style={{ borderColor: "rgba(212, 175, 55, 0.5)" }}
-                  crossOrigin="anonymous"
                 />
                 <div>
                   <p className="font-serif text-xl" style={{ color: "var(--text-primary)" }}>The Family</p>
