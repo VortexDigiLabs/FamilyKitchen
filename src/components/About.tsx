@@ -15,7 +15,7 @@ export default function About() {
             <FadeIn direction="right">
               <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none">
                 <img
-                  src="https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780074150/zxm9nnoytf8xiqnfpnxx.jpg"
+                  src="https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780225180/xbsm9dan5wgv4tfmmsov.jpg"
                   alt="Premium dry-aged beef"
                   className="w-full h-full object-cover rounded-sm"
                   crossOrigin="anonymous"
