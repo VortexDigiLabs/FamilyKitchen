@@ -60,18 +60,29 @@ export default function CartDrawer() {
     // Start timer when navigating to WhatsApp
     if (worker) worker.postMessage("start");
 
-    // Randomly select a WhatsApp number
-    const targetNumber =
-      WHATSAPP_NUMBERS[Math.floor(Math.random() * WHATSAPP_NUMBERS.length)];
-
     let message = `*FAMILY KITCHEN ORDER*\n---------------------------------------\n`;
     cart.forEach((item) => {
       message += `• ${item.quantity} x ${item.name} (R${item.price.toFixed(2)})\n`;
     });
     message += `---------------------------------------\n*Total Value: R${cartTotal.toFixed(2)}*\n\n*Collection Address:*\nShop 13, 509 Pretoria Road, Benoni\n`;
 
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${targetNumber}?text=${encodedMessage}`, "_blank");
+    const targetUrl = "https://chat.whatsapp.com/KlhogF8oi3D3dqaqhzfw4d?s=cl&p=a&ilr=2";
+
+    // Attempt to copy the order summary to the clipboard for easy pasting into the group chat
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(message)
+        .then(() => {
+          alert("Your order summary has been successfully copied to your clipboard! Once WhatsApp opens, simply paste (Ctrl+V or long-tap and select Paste) to submit your order to the group.");
+        })
+        .catch((err) => {
+          console.error("Failed to copy order summary: ", err);
+        })
+        .finally(() => {
+          window.open(targetUrl, "_blank");
+        });
+    } else {
+      window.open(targetUrl, "_blank");
+    }
   };
 
   if (!isCartOpen) return null;
