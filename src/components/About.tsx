@@ -13,11 +13,11 @@ export default function About() {
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
             <FadeIn direction="right">
-              <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none">
+              <div className="relative w-full max-w-md mx-auto lg:max-w-none">
                 <img
                   src="https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780225180/xbsm9dan5wgv4tfmmsov.jpg"
-                  alt="Premium dry-aged beef"
-                  className="w-full h-full object-cover rounded-sm"
+                  alt="Kiddos Meal Menu Poster"
+                  className="w-full h-auto object-contain rounded-sm shadow-xl"
                   crossOrigin="anonymous"
                 />
                 {/* Decorative border */}
