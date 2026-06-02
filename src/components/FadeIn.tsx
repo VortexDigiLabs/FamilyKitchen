@@ -6,6 +6,7 @@ interface FadeInProps {
   delay?: number;
   className?: string;
   direction?: 'up' | 'down' | 'left' | 'right';
+  key?: string | number;
 }
 
 export default function FadeIn({ children, delay = 0, className = "", direction = 'up' }: FadeInProps) {

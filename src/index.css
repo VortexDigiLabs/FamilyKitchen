@@ -51,3 +51,145 @@
     color: var(--text-primary);
   }
 }
+
+/* 3D Rotating Carousel Styles */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.carousel {
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: 
+    rotateY(calc(var(--offset) * 50deg)) 
+    scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -5rem));
+  filter: blur(calc(var(--abs-offset) * 0.15rem));
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.carousel-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.35s ease-out;
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+/* Add a gold glow/highlight to the active card */
+.card-container[style*="--active: 1"] .carousel-card {
+  border-color: var(--color-gold-400);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25), 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card:hover img {
+  transform: scale(1.03);
+}
+
+.carousel-nav {
+  color: var(--color-gold-400);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(17, 17, 17, 0.75);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.carousel-nav:hover {
+  background: var(--color-gold-400);
+  border-color: var(--color-gold-400);
+  color: var(--color-charcoal-950);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.carousel-nav.left {
+  left: -4.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel-nav.left:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-nav.right {
+  right: -4.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel-nav.right:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+@media (max-width: 1024px) {
+  .carousel-wrapper {
+    height: 25rem;
+    margin-bottom: 2rem;
+  }
+  .carousel {
+    width: 20rem;
+    height: 20rem;
+  }
+  .carousel-nav.left {
+    left: -3rem;
+  }
+  .carousel-nav.right {
+    right: -3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-wrapper {
+    height: 22rem;
+  }
+  .carousel {
+    width: 17rem;
+    height: 17rem;
+  }
+  .carousel-nav {
+    width: 3rem;
+    height: 3rem;
+  }
+  .carousel-nav.left {
+    left: -1.5rem;
+  }
+  .carousel-nav.right {
+    right: -1.5rem;
+  }
+}
+

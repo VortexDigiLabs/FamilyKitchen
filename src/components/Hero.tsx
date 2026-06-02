@@ -105,7 +105,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
         <FadeIn delay={0.2}>
           <span className="block text-gold-400 text-sm md:text-base uppercase tracking-[0.3em] mb-6">
-            Boutique Kitchen Experience
+            Warm Family Kitchen
           </span>
         </FadeIn>
 
@@ -122,7 +122,7 @@ export default function Hero() {
           <p className="text-lg md:text-xl font-light max-w-2xl mx-auto mb-12 leading-relaxed" style={{
             color: theme === "light" ? "#525252" : "#a0a0a0"
           }}>
-            Salt-of-the-earth family restaurant. Master butchery and generational family recipes, freshly prepared for collection at our shop.
+            Salt-of-the-earth family restaurant. Butcher's Choice cuts and generational family recipes, freshly prepared for collection at our shop.
           </p>
         </FadeIn>
 

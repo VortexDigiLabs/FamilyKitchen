@@ -121,7 +121,7 @@ export const menuItems: MenuItem[] = [
     description: "Steak strips, onion & mushroom.",
     price: 100,
     category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+    image: "/grilled_steak.png"
   },
   {
     id: "13",
@@ -231,28 +231,28 @@ export const menuItems: MenuItem[] = [
     name: "Wors Roll & Chips",
     price: 35,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1612240498936-65f5101365d2?auto=format&fit=crop&w=600&q=80"
+    image: "/boerewors_roll.png"
   },
   {
     id: "27",
     name: "Wors Roll (Standalone)",
     price: 35,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80"
+    image: "/boerewors_roll_standalone.png"
   },
   {
     id: "28",
     name: "Russian Roll & Chips",
     price: 53,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1612240498936-65f5101365d2?auto=format&fit=crop&w=600&q=80"
+    image: "/russian_roll.png"
   },
   {
     id: "29",
     name: "Russian Roll (Standalone)",
     price: 38,
     category: "Rolls",
-    image: "https://images.unsplash.com/photo-1627005753733-fb1b4f494a8f?auto=format&fit=crop&w=600&q=80"
+    image: "/russian_roll.png"
   },
 
   // Grilled Chicken Meals
@@ -275,7 +275,7 @@ export const menuItems: MenuItem[] = [
     name: "Grilled Chicken 1/4 with Rice",
     price: 42,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1516685018646-549198525c1b?auto=format&fit=crop&w=600&q=80"
+    image: "/grilled_chicken_rice.png"
   },
 
   // Everyday Mains
@@ -289,11 +289,27 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "34",
-    name: "250g Sirloin Steak",
+    name: "300g Aged Sirloin Steak",
     description: "Served with 1 Egg and Crinkle Cut Chips.",
-    price: 85,
+    price: 95,
     category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+    image: "/grilled_steak.png"
+  },
+  {
+    id: "70",
+    name: "350g Aged T-Bone Steak",
+    description: "Served with 1 Egg and Crinkle Cut Chips.",
+    price: 130,
+    category: "Everyday Mains",
+    image: "/grilled_steak.png"
+  },
+  {
+    id: "71",
+    name: "300g Aged Rump Steak",
+    description: "Served with 1 Egg and Crinkle Cut Chips.",
+    price: 110,
+    category: "Everyday Mains",
+    image: "/grilled_steak.png"
   },
   {
     id: "35",
@@ -310,28 +326,28 @@ export const menuItems: MenuItem[] = [
     name: "Extra 3 Cheeses",
     price: 15,
     category: "Pizza/Sides Extras",
-    image: "https://images.unsplash.com/photo-1589881133595-a3c085cb1493?auto=format&fit=crop&w=600&q=80"
+    image: "/extra_cheese.png"
   },
   {
     id: "37",
     name: "Feta Cheese Portion",
     price: 15,
     category: "Pizza/Sides Extras",
-    image: "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=600&q=80"
+    image: "/feta_cheese.png"
   },
   {
     id: "38",
     name: "Jalapeños",
     price: 10,
     category: "Pizza/Sides Extras",
-    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80"
+    image: "/jalapenos.png"
   },
   {
     id: "39",
     name: "Crushed Garlic",
     price: 10,
     category: "Pizza/Sides Extras",
-    image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80"
+    image: "/garlic.png"
   },
   {
     id: "40",
@@ -454,7 +470,7 @@ export const menuItems: MenuItem[] = [
     name: "4 x Chicken Burgers with Chips",
     price: 220,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80"
+    image: "/chicken_burgers_chips.png"
   },
   {
     id: "55",
@@ -496,28 +512,28 @@ export const menuItems: MenuItem[] = [
     name: "4 x Wors Rolls with Chips",
     price: 180,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1612240498936-65f5101365d2?auto=format&fit=crop&w=600&q=80"
+    image: "/boerewors_roll.png"
   },
   {
     id: "61",
     name: "4 x Wors Rolls (No Chips)",
     price: 145,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80"
+    image: "/boerewors_roll_standalone.png"
   },
   {
     id: "62",
     name: "3 x Kota with Chips",
     price: 125,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+    image: "/kota_with_chips.png"
   },
   {
     id: "63",
     name: "3 x Kota (No Chips)",
     price: 95,
     category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+    image: "/kota_no_chips.png"
   },
 
   // Friday Braai Day Special
@@ -543,7 +559,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Pork Chop + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+    image: "/braai_pack.png"
   },
   {
     id: "67",
@@ -551,7 +567,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Beef Brisket Cut + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+    image: "/braai_pack.png"
   },
 
   // Sunday Lunch & Dessert

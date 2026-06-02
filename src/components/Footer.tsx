@@ -21,7 +21,7 @@ export default function Footer() {
             <p className="font-light text-sm leading-relaxed mb-6" style={{
               color: "var(--text-secondary)"
             }}>
-              Salt-of-the-earth family restaurant. Master butchery and generational family recipes.
+              Salt-of-the-earth family restaurant. Butcher's Choice cuts and generational family recipes.
             </p>
             <div className="flex gap-4">
               <a
