@@ -118,14 +118,14 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
           {/* Image Side */}
-          <div className="relative order-2 lg:order-1 flex justify-center items-center">
+          <div className="relative order-2 lg:order-1 flex justify-center items-center" style={{ zIndex: 1 }}>
             <FadeIn direction="right" className="w-full">
               <Carousel />
             </FadeIn>
           </div>
 
           {/* Text Side */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2" style={{ position: 'relative', zIndex: 20, isolation: 'isolate' }}>
             <FadeIn>
               <span className="text-gold-400 text-sm uppercase tracking-[0.2em] mb-4 block">Our Heritage</span>
               <h2 className="text-4xl md:text-5xl mb-8 leading-tight">
