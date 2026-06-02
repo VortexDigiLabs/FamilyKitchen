@@ -114,7 +114,7 @@ export default function About() {
 
             <FadeIn delay={0.2}>
               <p className="mb-6 font-light leading-relaxed text-lg" style={{ color: "var(--text-secondary)" }}>
-                Rooted in the traditions of our Oumas and Mas, Family Kitchen celebrates the essence of home-cooked heritage. We are home cooks cooking with family love, passing down the recipes of our grandmothers and grandfathers ("ouma en oupa se chefs") straight to your table.
+                Rooted in the traditions of our Oumas and Oupas, Family Kitchen celebrates the essence of home-cooked heritage. We are home cooks cooking with family love, passing down the recipes of our grandmothers and grandfathers ("ouma en oupa se chefs") straight to your table.
               </p>
               <p className="mb-10 font-light leading-relaxed text-lg" style={{ color: "var(--text-secondary)" }}>
                 Beyond the comforting classics, we pride ourselves on <strong style={{ color: "var(--text-primary)" }}>Butcher's Choice Selection</strong>. Drawing from our butchery background, we source and age the finest standard cuts. Whether it's our Signature 30cm Monster Burgers or our standard Aged Ribeye, you are tasting honest, down-to-earth family cooking.
