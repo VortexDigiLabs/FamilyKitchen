@@ -7,6 +7,23 @@ const CARUSAL_IMAGES = [
   "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780405776/y45hiqdcbwgyrqr5omrv.jpg",
   "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780405776/fjdibesaaqkkqdjnnoqm.jpg",
   "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780405776/woidzdbr0ucwgchtixxq.jpg", // Start image (Index 2)
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/tni7bcxrfopdohznujto.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/yglatpbj0rgu1z3ghkja.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/ya67zo4gwoo9n3x6lkkx.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/nmueu1hroekuvu6ugzhy.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/qfwzl1yuo1a9nngaozfl.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419963/zaqo6w6rk8qt2fket1bi.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419961/bkhq7852pvs9zri1rdht.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419960/drsolg4j5zs2mkeog1ng.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419960/ocbqwnm2teckpxxw48kt.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419960/aa9qbwe0y7zphlsvdssq.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419960/g3paponj5zhjnalymem4.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419959/bxutkn8tb2neovqckr4r.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419959/sxbaqdyx57i452wsan2k.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419959/ft0k9q0o96oy9ujm9aho.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419958/jsxvjjo6turyhcrmb69h.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419958/iz36lm392krbnvayhmd2.jpg",
+  "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1780419958/ep7ymiadiudqhdz76qwq.jpg"
 ];
 
 const MAX_VISIBILITY = 3;
@@ -29,6 +46,8 @@ function CarouselCard({ imageUrl, altText }: CarouselCardProps) {
   );
 }
 
+const getModulo = (n: number, m: number) => ((n % m) + m) % m;
+
 function Carousel() {
   const [active, setActive] = useState(2); // Start at index 2 (third image)
   const count = CARUSAL_IMAGES.length;
@@ -36,21 +55,26 @@ function Carousel() {
   return (
     <div className="carousel-wrapper">
       <div className="carousel">
-        {active > 0 && (
-          <button
-            className="carousel-nav left"
-            onClick={() => setActive((i) => i - 1)}
-            aria-label="Previous image"
-          >
-            <ChevronLeft size={24} />
-          </button>
-        )}
+        <button
+          className="carousel-nav left"
+          onClick={() => setActive((i) => i - 1)}
+          aria-label="Previous image"
+        >
+          <ChevronLeft size={24} />
+        </button>
         
         {CARUSAL_IMAGES.map((url, i) => {
-          const offset = (active - i) / 3;
-          const direction = Math.sign(active - i);
-          const absOffset = Math.abs(active - i) / 3;
-          const isActive = i === active;
+          const activeIdx = getModulo(active, count);
+          let diff = i - activeIdx;
+          
+          // Shortest path circular calculations
+          if (diff > count / 2) diff -= count;
+          if (diff < -count / 2) diff += count;
+
+          const offset = diff / 3;
+          const direction = Math.sign(diff);
+          const absOffset = Math.abs(diff) / 3;
+          const isActive = i === activeIdx;
 
           return (
             <div
@@ -72,15 +96,13 @@ function Carousel() {
           );
         })}
         
-        {active < count - 1 && (
-          <button
-            className="carousel-nav right"
-            onClick={() => setActive((i) => i + 1)}
-            aria-label="Next image"
-          >
-            <ChevronRight size={24} />
-          </button>
-        )}
+        <button
+          className="carousel-nav right"
+          onClick={() => setActive((i) => i + 1)}
+          aria-label="Next image"
+        >
+          <ChevronRight size={24} />
+        </button>
       </div>
     </div>
   );
