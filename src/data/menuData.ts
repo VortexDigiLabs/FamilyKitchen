@@ -117,8 +117,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "12",
-    name: "Steakhouse Special",
-    description: "Steak strips, onion & mushroom.",
+    name: "Steak, Egg & Chips",
+    description: "Steak strips, egg & chips.",
     price: 100,
     category: "Classic Pizzas",
     image: "/grilled_steak.png"
