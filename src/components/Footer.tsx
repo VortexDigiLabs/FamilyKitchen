@@ -45,7 +45,14 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 font-light text-sm" style={{ color: "var(--text-secondary)" }}>
                 <MapPin className="w-5 h-5 text-gold-400 shrink-0" />
-                <span>509 Pretoria Road, Shop nr 13,<br />Fairleads, Benoni, 1501</span>
+                <a
+                  href="https://www.google.com/maps/place/The+family+kitchen+take+aways/@-26.1304612,28.3537053,17z/data=!4m14!1m7!3m6!1s0x1e953fe6dff8155d:0x2eaa6d27026e0ffe!2sThe+family+kitchen+take+aways!8m2!3d-26.1304612!4d28.3537053!16s%2Fg%2F11zckvlzpn!3m5!1s0x1e953fe6dff8155d:0x2eaa6d27026e0ffe!8m2!3d-26.1304612!4d28.3537053!16s%2Fg%2F11zckvlzpn!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  509 Pretoria Road, Shop nr 13,<br />Fairleads, Benoni, 1501
+                </a>
               </li>
               <li className="flex items-center gap-3 font-light text-sm" style={{ color: "var(--text-secondary)" }}>
                 <MessageCircle className="w-5 h-5 text-gold-400 shrink-0" />
