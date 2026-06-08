@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage.",
     price: 20,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "97",
@@ -267,7 +267,7 @@ export const menuItems: MenuItem[] = [
     name: "Full Chicken with Chips",
     price: 100,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "110",
@@ -392,7 +392,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 1x Small Pizza & Juice Box.",
     price: 38,
     category: "Kiddos Pizza Combos",
-    image: "https://images.unsplash.com/photo-1528137871230-7010a22f6e60?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "49",
@@ -438,7 +438,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional Homemade Meatloaf, White Rice, Baked Potato Wedges, Creamy Broccoli & Cauliflower.",
     price: 60,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1606728035253-49e196707685?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "69",
