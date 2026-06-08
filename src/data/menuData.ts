@@ -76,7 +76,7 @@ export const menuItems: MenuItem[] = [
     description: "Tender chicken burger patty, flame-grilled and served on a fresh bun with crispy chips. Can be ordered without chips — just ask us.",
     price: 50,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1615228939096-9eaa6cd74ff3?auto=format&fit=crop&w=600&q=80"
+    image: "/chicken_burgers_chips.png"
   },
 
   // === KOTA ===
@@ -86,7 +86,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional street food hollowed-out quarter loaf bread filled with chips, egg, Russian sausage, and melted cheese.",
     price: 35,
     category: "Kota",
-    image: "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
+    image: "/kota_no_chips.png"
   },
   {
     id: "95",
@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
     description: "Loaded quarter loaf bread filled with chips, polony, Russian sausage, and cheese. Served with Chips on the Side.",
     price: 55,
     category: "Kota",
-    image: "https://images.unsplash.com/photo-1540713434306-53f2c3d1a3be?auto=format&fit=crop&w=600&q=80"
+    image: "/kota_with_chips.png"
   },
 
   // === RUSSIANS ===
@@ -112,7 +112,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage, served with a portion of crispy chips.",
     price: 40,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1585325701165-351af916e5ec?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "99",
@@ -120,7 +120,7 @@ export const menuItems: MenuItem[] = [
     description: "Tasty Russian sausage infused with melted cheese, served with a portion of crispy chips.",
     price: 48,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1585325701165-351af916e5ec?auto=format&fit=crop&w=600&q=80&sig=cheesese"
   },
   {
     id: "101",
@@ -374,7 +374,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "45",
@@ -382,7 +382,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1627662236973-4f8259fa2441?auto=format&fit=crop&w=600&q=80"
   },
 
   // === KIDDOS PIZZA COMBOS ===
@@ -420,7 +420,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Grilled Chicken Piece + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
+    image: "/braai_pack.png"
   },
   {
     id: "65",
@@ -428,7 +428,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Boerewors Coil + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+    image: "/braai_pack.png"
   },
 
   // === SUNDAY LUNCH & DESSERT ===
@@ -438,7 +438,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional Homemade Meatloaf, White Rice, Baked Potato Wedges, Creamy Broccoli & Cauliflower.",
     price: 60,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1606728035253-49e196707685?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "69",
@@ -446,6 +446,6 @@ export const menuItems: MenuItem[] = [
     description: "Classic Malva Pudding served with hot custard.",
     price: 25,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1515003844-18985ba3e786?auto=format&fit=crop&w=600&q=80"
   }
 ];
