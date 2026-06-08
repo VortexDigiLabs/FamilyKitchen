@@ -267,14 +267,14 @@ export const menuItems: MenuItem[] = [
     name: "Full Chicken with Chips",
     price: 100,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80"
+    image: "/full_chicken_chips.png"
   },
   {
     id: "110",
     name: "1/2 Chicken with Chips",
     price: 75,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
+    image: "/half_chicken_chips.png"
   },
   {
     id: "30",
