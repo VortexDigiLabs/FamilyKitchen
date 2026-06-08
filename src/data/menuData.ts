@@ -68,7 +68,7 @@ export const menuItems: MenuItem[] = [
     description: "Ultimate burger with flame-grilled beef patty, bacon, egg, and melted cheese, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 70,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1598182126876-046db48227ad?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "85",
@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage.",
     price: 20,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1541048611056-229f3f3336ef?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "97",
@@ -112,7 +112,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage, served with a portion of crispy chips.",
     price: 40,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1585325701165-351af916e5ec?auto=format&fit=crop&w=600&q=80"
+    image: "/russian_roll.png"
   },
   {
     id: "99",
@@ -120,7 +120,7 @@ export const menuItems: MenuItem[] = [
     description: "Tasty Russian sausage infused with melted cheese, served with a portion of crispy chips.",
     price: 48,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=600&q=80&sig=cheeseruss"
+    image: "/boerewors_roll.png"
   },
   {
     id: "101",
@@ -128,7 +128,7 @@ export const menuItems: MenuItem[] = [
     description: "Extra long gourmet cheese Russian sausage, served with a portion of crispy chips.",
     price: 80,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&q=80"
   },
 
   // === CLASSIC PIZZAS ===
@@ -170,7 +170,7 @@ export const menuItems: MenuItem[] = [
     description: "Spicy mince, peppers & 3 cheeses.",
     price: 90,
     category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1594007654729-407ededc4963?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "11",
@@ -267,7 +267,7 @@ export const menuItems: MenuItem[] = [
     name: "Full Chicken with Chips",
     price: 100,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "110",
@@ -298,7 +298,7 @@ export const menuItems: MenuItem[] = [
     description: "Beef burger patties, eggs, fried onions, bacon bits, creamed & grated cheese, sliced gherkins, lettuce, tomatoes, and signature Family Kitchen Sauce.",
     price: 150,
     category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1582196016295-f8c894c37974?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80"
   },
 
   // === PIZZA/SIDES EXTRAS ===
@@ -382,7 +382,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1627662236973-4f8259fa2441?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80&sig=kiddopops"
   },
 
   // === KIDDOS PIZZA COMBOS ===
@@ -446,6 +446,6 @@ export const menuItems: MenuItem[] = [
     description: "Classic Malva Pudding served with hot custard.",
     price: 25,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1515003844-18985ba3e786?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
   }
 ];
