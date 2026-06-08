@@ -36,7 +36,7 @@ export const menuItems: MenuItem[] = [
     description: "Classic flame-grilled beef burger patty on a fresh bun, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 55,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "75",
@@ -44,7 +44,7 @@ export const menuItems: MenuItem[] = [
     description: "Flame-grilled beef patty topped with melted cheese, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 60,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "79",
@@ -52,7 +52,7 @@ export const menuItems: MenuItem[] = [
     description: "Flame-grilled beef patty topped with crispy bacon, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 63,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "81",
@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
     description: "Flame-grilled beef patty topped with savory mushroom sauce, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 60,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "93",
@@ -68,7 +68,7 @@ export const menuItems: MenuItem[] = [
     description: "Ultimate burger with flame-grilled beef patty, bacon, egg, and melted cheese, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 70,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1598182126876-046db48227ad?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "85",
@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage.",
     price: 20,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1541048611056-229f3f3336ef?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "97",
@@ -120,7 +120,7 @@ export const menuItems: MenuItem[] = [
     description: "Tasty Russian sausage infused with melted cheese, served with a portion of crispy chips.",
     price: 48,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1585325701165-351af916e5ec?auto=format&fit=crop&w=600&q=80&sig=cheesese"
+    image: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=600&q=80&sig=cheeseruss"
   },
   {
     id: "101",
@@ -128,7 +128,7 @@ export const menuItems: MenuItem[] = [
     description: "Extra long gourmet cheese Russian sausage, served with a portion of crispy chips.",
     price: 80,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80"
   },
 
   // === CLASSIC PIZZAS ===
@@ -428,7 +428,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Boerewors Coil + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "/braai_pack.png"
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
   },
 
   // === SUNDAY LUNCH & DESSERT ===
