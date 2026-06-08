@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage.",
     price: 20,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=600&q=80"
+    image: "/russian_sausage.png"
   },
   {
     id: "97",
@@ -112,7 +112,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage, served with a portion of crispy chips.",
     price: 40,
     category: "Russians",
-    image: "/russian_roll.png"
+    image: "/russian_with_chips.png"
   },
   {
     id: "99",
@@ -120,7 +120,7 @@ export const menuItems: MenuItem[] = [
     description: "Tasty Russian sausage infused with melted cheese, served with a portion of crispy chips.",
     price: 48,
     category: "Russians",
-    image: "/boerewors_roll.png"
+    image: "/cheese_russian_chips.png"
   },
   {
     id: "101",
@@ -128,7 +128,7 @@ export const menuItems: MenuItem[] = [
     description: "Extra long gourmet cheese Russian sausage, served with a portion of crispy chips.",
     price: 80,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&q=80"
+    image: "/cheese_russian_long_chips.png"
   },
 
   // === CLASSIC PIZZAS ===
