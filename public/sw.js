@@ -39,6 +39,11 @@ self.addEventListener('activate', (event) => {
 
 // Fetch Event - Stale-While-Revalidate Caching Strategy
 self.addEventListener('fetch', (event) => {
+  // Bypass caching on localhost for development to prevent stale responses
+  if (self.location.hostname === 'localhost' || self.location.hostname === '127.0.0.1') {
+    return;
+  }
+
   // Only handle standard GET requests (ignore API calls/mutations if any, or non-http protocols)
   if (event.request.method !== 'GET' || !event.request.url.startsWith(self.location.origin)) {
     return;
