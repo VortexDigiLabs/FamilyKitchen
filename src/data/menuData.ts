@@ -13,7 +13,6 @@ export const categories = [
   "Kiddos Meals",
   "Kiddos Pizza Combos",
   "Regular Combos",
-  "Limited Stock Promotions",
   "Friday Braai Day",
   "Sunday Lunch & Dessert"
 ];
@@ -29,182 +28,55 @@ export interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
+
   // === BURGERS ===
-  {
-    id: "72",
-    name: "Beef Burger (No Chips)",
-    description: "Classic flame-grilled beef burger patty on a fresh bun.",
-    price: 45,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
-  },
   {
     id: "73",
     name: "Beef Burger with Chips",
-    description: "Classic flame-grilled beef burger patty on a fresh bun, served with crispy chips.",
+    description: "Classic flame-grilled beef burger patty on a fresh bun, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 55,
     category: "Burgers",
     image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "74",
-    name: "Cheese Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with melted cheese.",
-    price: 50,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "75",
     name: "Cheese Burger with Chips",
-    description: "Flame-grilled beef patty topped with melted cheese, served with crispy chips.",
+    description: "Flame-grilled beef patty topped with melted cheese, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 60,
     category: "Burgers",
     image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "76",
-    name: "Egg Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with a fried egg.",
-    price: 50,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "77",
-    name: "Egg Burger with Chips",
-    description: "Flame-grilled beef patty topped with a fried egg, served with crispy chips.",
-    price: 60,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "78",
-    name: "Bacon Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with crispy bacon.",
-    price: 53,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80&sig=baconburger"
-  },
-  {
     id: "79",
     name: "Bacon Burger with Chips",
-    description: "Flame-grilled beef patty topped with crispy bacon, served with crispy chips.",
+    description: "Flame-grilled beef patty topped with crispy bacon, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 63,
     category: "Burgers",
     image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "80",
-    name: "Mushroom Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with savory mushroom sauce.",
-    price: 50,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1603064752734-4c48eff5fe10?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "81",
     name: "Mushroom Burger with Chips",
-    description: "Flame-grilled beef patty topped with savory mushroom sauce, served with crispy chips.",
+    description: "Flame-grilled beef patty topped with savory mushroom sauce, served with crispy chips. Can be ordered without chips — just ask us.",
     price: 60,
     category: "Burgers",
     image: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "82",
-    name: "Pineapple Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with a sweet pineapple ring.",
-    price: 52,
+    id: "93",
+    name: "Bacon Egg & Cheese Burger with Chips",
+    description: "Ultimate burger with flame-grilled beef patty, bacon, egg, and melted cheese, served with crispy chips. Can be ordered without chips — just ask us.",
+    price: 70,
     category: "Burgers",
-    image: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "83",
-    name: "Pineapple Burger with Chips",
-    description: "Flame-grilled beef patty topped with a sweet pineapple ring, served with crispy chips.",
-    price: 62,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "84",
-    name: "Chicken Burger (No Chips)",
-    description: "Tender chicken burger patty, flame-grilled and served on a fresh bun.",
-    price: 40,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "85",
     name: "Chicken Burger with Chips",
-    description: "Tender chicken burger patty, flame-grilled and served on a fresh bun with crispy chips.",
+    description: "Tender chicken burger patty, flame-grilled and served on a fresh bun with crispy chips. Can be ordered without chips — just ask us.",
     price: 50,
     category: "Burgers",
     image: "https://images.unsplash.com/photo-1615228939096-9eaa6cd74ff3?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "86",
-    name: "Chicken & Cheese Burger (No Chips)",
-    description: "Tender chicken burger patty topped with melted cheese.",
-    price: 45,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "87",
-    name: "Chicken & Cheese Burger with Chips",
-    description: "Tender chicken burger patty topped with melted cheese, served with crispy chips.",
-    price: 55,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1627847424063-e2bfb0c4704b?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "88",
-    name: "Chicken & Egg Burger (No Chips)",
-    description: "Tender chicken burger patty topped with a fried egg.",
-    price: 45,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "89",
-    name: "Chicken & Egg Burger with Chips",
-    description: "Tender chicken burger patty topped with a fried egg, served with crispy chips.",
-    price: 55,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "90",
-    name: "Bacon & Cheese Burger (No Chips)",
-    description: "Flame-grilled beef patty topped with crispy bacon and melted cheese.",
-    price: 55,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "91",
-    name: "Bacon & Cheese Burger with Chips",
-    description: "Flame-grilled beef patty topped with crispy bacon and melted cheese, served with crispy chips.",
-    price: 65,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80&sig=bcch"
-  },
-  {
-    id: "92",
-    name: "Bacon Egg & Cheese Burger (No Chips)",
-    description: "Ultimate burger with flame-grilled beef patty, bacon, egg, and melted cheese.",
-    price: 60,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1598182126872-946618775338?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "93",
-    name: "Bacon Egg & Cheese Burger with Chips",
-    description: "Ultimate burger with flame-grilled beef patty, bacon, egg, and melted cheese, served with crispy chips.",
-    price: 70,
-    category: "Burgers",
-    image: "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=600&q=80"
   },
 
   // === KOTA ===
@@ -240,15 +112,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried classic red Russian sausage, served with a portion of crispy chips.",
     price: 40,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80&sig=russianchips"
-  },
-  {
-    id: "98",
-    name: "Cheese Russian (No Chips)",
-    description: "Tasty Russian sausage infused with melted cheese inside.",
-    price: 28,
-    category: "Russians",
-    image: "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "99",
@@ -256,15 +120,7 @@ export const menuItems: MenuItem[] = [
     description: "Tasty Russian sausage infused with melted cheese, served with a portion of crispy chips.",
     price: 48,
     category: "Russians",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80&sig=cheeserussian"
-  },
-  {
-    id: "100",
-    name: "Cheese Russian Long (No Chips)",
-    description: "Extra long gourmet cheese Russian sausage.",
-    price: 60,
-    category: "Russians",
-    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "101",
@@ -273,22 +129,6 @@ export const menuItems: MenuItem[] = [
     price: 80,
     category: "Russians",
     image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "102",
-    name: "Roll Normal",
-    description: "Freshly baked normal size bread roll.",
-    price: 12,
-    category: "Russians",
-    image: "https://images.unsplash.com/photo-1600431521340-491eca880813?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "103",
-    name: "Fastlong Roll",
-    description: "Freshly baked long bread roll, ideal for long Russians.",
-    price: 20,
-    category: "Russians",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
   },
 
   // === CLASSIC PIZZAS ===
@@ -317,28 +157,12 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "4",
-    name: "Chicken Mayo Supreme",
-    description: "Creamy chicken mayo & 3 cheeses.",
-    price: 85,
-    category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "5",
     name: "BBQ Chicken Pizza",
     description: "BBQ chicken with melted 3 cheeses.",
     price: 85,
     category: "Classic Pizzas",
     image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "6",
-    name: "Italian Stallion",
-    description: "Bolognese mince & 3 cheeses.",
-    price: 85,
-    category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "7",
@@ -349,44 +173,12 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1594007654729-407ededc4963?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "8",
-    name: "Salami Passion",
-    description: "Salami & extra 3 cheeses.",
-    price: 90,
-    category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "9",
-    name: "Sweet Chilli Chicken",
-    description: "Chicken strips, sweet chilli sauce & feta.",
-    price: 95,
-    category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "10",
-    name: "Bacon Garlic Feta",
-    description: "Bacon, feta & crushed garlic.",
-    price: 95,
-    category: "Classic Pizzas",
-    image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "11",
     name: "Rib & BBQ Blast",
     description: "BBQ rib strips with 3 cheeses.",
     price: 100,
     category: "Classic Pizzas",
     image: "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "12",
-    name: "Steakhouse Special",
-    description: "Steak strips, onion & mushroom.",
-    price: 100,
-    category: "Classic Pizzas",
-    image: "/grilled_steak.png"
   },
   {
     id: "13",
@@ -404,15 +196,7 @@ export const menuItems: MenuItem[] = [
     description: "Ham, bacon, mushroom, peppers, olives & 3 cheeses.",
     price: 105,
     category: "Gourmet Pizzas",
-    image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=600&q=80&sig=fullhouse"
-  },
-  {
-    id: "15",
-    name: "Triple Cheese Explosion",
-    description: "Mozzarella, cheddar & feta.",
-    price: 95,
-    category: "Gourmet Pizzas",
-    image: "https://images.unsplash.com/photo-1573821663912-569905455b1c?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "16",
@@ -423,20 +207,12 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "17",
-    name: "Breakfast Pizza",
-    description: "Egg, bacon, 3 cheeses & grilled tomato.",
-    price: 90,
-    category: "Gourmet Pizzas",
-    image: "https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "18",
     name: "Veggie Lovers",
     description: "Mushroom, peppers, onion, olives, feta & 3 cheeses.",
     price: 85,
     category: "Gourmet Pizzas",
-    image: "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=600&q=80&sig=veggielove"
+    image: "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=600&q=80"
   },
 
   // === TOASTIES ===
@@ -455,11 +231,11 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1538220856186-0be0e085984d?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "21",
-    name: "Bacon & Cheese Toastie",
-    price: 30,
+    id: "22",
+    name: "Bacon, Egg & Cheese Toastie",
+    price: 40,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1600431521938-f311df781980?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "104",
@@ -468,57 +244,8 @@ export const menuItems: MenuItem[] = [
     category: "Toasties",
     image: "https://images.unsplash.com/photo-1621800041134-c2741d48f4fa?auto=format&fit=crop&w=600&q=80"
   },
-  {
-    id: "22",
-    name: "Bacon, Egg & Cheese Toastie",
-    price: 40,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1600431521938-f311df781980?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "23",
-    name: "Beef Burger Toastie",
-    price: 35,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80&sig=toastybeef"
-  },
-  {
-    id: "25",
-    name: "Bacon & Egg Toastie",
-    price: 30,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "105",
-    name: "Chicken & Mayo Toastie",
-    price: 40,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1621800041134-c2741d48f4fa?auto=format&fit=crop&w=600&q=80&sig=chickmayotoasty"
-  },
-  {
-    id: "106",
-    name: "Ham Cheese & Tomato Toastie",
-    price: 28,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "24",
-    name: "Chicken Burger Toastie",
-    price: 30,
-    category: "Toasties",
-    image: "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80&sig=toastychick"
-  },
 
   // === ROLLS ===
-  {
-    id: "27",
-    name: "Wors Roll (Standalone)",
-    price: 35,
-    category: "Rolls",
-    image: "/boerewors_roll_standalone.png"
-  },
   {
     id: "26",
     name: "Wors Roll & Chips",
@@ -527,28 +254,14 @@ export const menuItems: MenuItem[] = [
     image: "/boerewors_roll.png"
   },
   {
-    id: "29",
-    name: "Russian Roll (Standalone)",
-    price: 38,
-    category: "Rolls",
-    image: "/russian_roll.png"
-  },
-  {
     id: "28",
     name: "Russian Roll & Chips",
     price: 53,
     category: "Rolls",
-    image: "/russian_roll.png&sig=chips"
+    image: "/russian_roll.png"
   },
 
   // === GRILLED CHICKEN MEALS ===
-  {
-    id: "107",
-    name: "Full Chicken (No Chips)",
-    price: 79,
-    category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80"
-  },
   {
     id: "108",
     name: "Full Chicken with Chips",
@@ -557,81 +270,28 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "109",
-    name: "1/2 Chicken (No Chips)",
-    price: 55,
-    category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=600&q=80"
-  },
-  {
     id: "110",
     name: "1/2 Chicken with Chips",
     price: 75,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80&sig=halfchicken"
-  },
-  {
-    id: "111",
-    name: "1/4 Chicken (No Chips)",
-    price: 30,
-    category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80&sig=quarter"
+    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "30",
     name: "Grilled Chicken 1/4 with Chips",
     price: 55,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?auto=format&fit=crop&w=600&q=80&sig=quarterchips"
+    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "31",
     name: "Grilled Chicken 1/4 with Pap",
     price: 40,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80&sig=chickpap"
-  },
-  {
-    id: "32",
-    name: "Grilled Chicken 1/4 with Rice",
-    price: 42,
-    category: "Grilled Chicken Meals",
-    image: "/grilled_chicken_rice.png"
+    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80"
   },
 
   // === EVERYDAY MAINS ===
-  {
-    id: "33",
-    name: "300g Aged Ribeye Steak",
-    description: "Served with 1 Egg and Crinkle Cut Chips.",
-    price: 120,
-    category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "34",
-    name: "300g Aged Sirloin Steak",
-    description: "Served with 1 Egg and Crinkle Cut Chips.",
-    price: 95,
-    category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "70",
-    name: "350g Aged T-Bone Steak",
-    description: "Served with 1 Egg and Crinkle Cut Chips.",
-    price: 130,
-    category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "71",
-    name: "300g Aged Rump Steak",
-    description: "Served with 1 Egg and Crinkle Cut Chips.",
-    price: 110,
-    category: "Everyday Mains",
-    image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=600&q=80&sig=rump"
-  },
   {
     id: "35",
     name: "30cm Monster Burger",
@@ -641,7 +301,7 @@ export const menuItems: MenuItem[] = [
     image: "https://images.unsplash.com/photo-1582196016295-f8c894c37974?auto=format&fit=crop&w=600&q=80"
   },
 
-  // === EXTRAS / ADD ONS ===
+  // === PIZZA/SIDES EXTRAS ===
   {
     id: "36",
     name: "Extra 3 Cheeses",
@@ -706,15 +366,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80&sig=kidbeef"
-  },
-  {
-    id: "43",
-    name: "Kiddos Chicken Burger Platter",
-    description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
-    price: 35,
-    category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80&sig=kidchick"
+    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "44",
@@ -730,7 +382,7 @@ export const menuItems: MenuItem[] = [
     description: "Includes 100% Apple Liqui Fruit Juice Box & Smiley Fries.",
     price: 35,
     category: "Kiddos Meals",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80&sig=kidpops"
+    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
   },
 
   // === KIDDOS PIZZA COMBOS ===
@@ -741,22 +393,6 @@ export const menuItems: MenuItem[] = [
     price: 38,
     category: "Kiddos Pizza Combos",
     image: "https://images.unsplash.com/photo-1528137871230-7010a22f6e60?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "47",
-    name: "Kiddos BBQ Chicken Pizza Combo",
-    description: "Includes 1x Small Pizza & Juice Box.",
-    price: 38,
-    category: "Kiddos Pizza Combos",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80&sig=kidbbq"
-  },
-  {
-    id: "48",
-    name: "Kiddos Tomato & Cheese Pizza Combo",
-    description: "Includes 1x Small Pizza & Juice Box.",
-    price: 38,
-    category: "Kiddos Pizza Combos",
-    image: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "49",
@@ -774,101 +410,7 @@ export const menuItems: MenuItem[] = [
     description: "Any 2 Regular Pizzas + 2-Litre Pepsi.",
     price: 200,
     category: "Regular Combos",
-    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=600&q=80&sig=doublepizza"
-  },
-
-  // === LIMITED STOCK PROMOTIONS ===
-  {
-    id: "51",
-    name: "Bulk Pizza Combo",
-    description: "2 x Pizzas (Bacon & Cheese Feast or BBQ Chicken) + 2L Pepsi.",
-    price: 200,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=600&q=80&sig=bulkpizza"
-  },
-  {
-    id: "52",
-    name: "4 x Beef Burgers with Chips",
-    price: 220,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80&sig=fourbeefchips"
-  },
-  {
-    id: "53",
-    name: "4 x Beef Burgers (No Chips)",
-    price: 200,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "54",
-    name: "4 x Chicken Burgers with Chips",
-    price: 220,
-    category: "Limited Stock Promotions",
-    image: "/chicken_burgers_chips.png"
-  },
-  {
-    id: "55",
-    name: "4 x Chicken Burgers (No Chips)",
-    price: 200,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80&sig=fourchicknochips"
-  },
-  {
-    id: "56",
-    name: "1 x Monster Burger with Chips",
-    price: 180,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "57",
-    name: "1 x Monster Burger (No Chips)",
-    price: 150,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1456418047667-56bec35b1213?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "58",
-    name: "1 x Mini Monster Burger with Chips",
-    price: 130,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1549611016-3a70d82b5040?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "59",
-    name: "1 x Mini Monster Burger (No Chips)",
-    price: 100,
-    category: "Limited Stock Promotions",
-    image: "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "60",
-    name: "4 x Wors Rolls with Chips",
-    price: 180,
-    category: "Limited Stock Promotions",
-    image: "/boerewors_roll.png?sig=fourworschips"
-  },
-  {
-    id: "61",
-    name: "4 x Wors Rolls (No Chips)",
-    price: 145,
-    category: "Limited Stock Promotions",
-    image: "/boerewors_roll_standalone.png?sig=fourwors"
-  },
-  {
-    id: "62",
-    name: "3 x Kota with Chips",
-    price: 125,
-    category: "Limited Stock Promotions",
-    image: "/kota_with_chips.png"
-  },
-  {
-    id: "63",
-    name: "3 x Kota (No Chips)",
-    price: 95,
-    category: "Limited Stock Promotions",
-    image: "/kota_no_chips.png"
+    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=600&q=80"
   },
 
   // === FRIDAY BRAAI DAY ===
@@ -886,23 +428,7 @@ export const menuItems: MenuItem[] = [
     description: "1x Boerewors Coil + 1x Chicken Kebab Stick + Braai Pap.",
     price: 60,
     category: "Friday Braai Day",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80&sig=braai2"
-  },
-  {
-    id: "66",
-    name: "Braai Pack 3",
-    description: "1x Pork Chop + 1x Chicken Kebab Stick + Braai Pap.",
-    price: 60,
-    category: "Friday Braai Day",
-    image: "/braai_pack.png"
-  },
-  {
-    id: "67",
-    name: "Braai Pack 4",
-    description: "1x Beef Brisket Cut + 1x Chicken Kebab Stick + Braai Pap.",
-    price: 60,
-    category: "Friday Braai Day",
-    image: "/braai_pack.png&sig=4"
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
   },
 
   // === SUNDAY LUNCH & DESSERT ===
@@ -912,7 +438,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional Homemade Meatloaf, White Rice, Baked Potato Wedges, Creamy Broccoli & Cauliflower.",
     price: 60,
     category: "Sunday Lunch & Dessert",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80&sig=sundayroast"
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "69",
