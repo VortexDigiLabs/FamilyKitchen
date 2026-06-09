@@ -349,7 +349,7 @@ export const menuItems: MenuItem[] = [
     name: "6 x Rolls",
     price: 27,
     category: "Pizza/Sides Extras",
-    image: "https://images.unsplash.com/photo-1598142719229-3732442475ab?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "113",

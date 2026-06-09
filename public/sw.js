@@ -1,4 +1,4 @@
-const CACHE_NAME = 'family-kitchen-cache-v2';
+const CACHE_NAME = 'family-kitchen-cache-v3';
 
 // Assets to cache on install for initial shell load
 const PRECACHE_ASSETS = [
