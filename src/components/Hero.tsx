@@ -65,9 +65,9 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden py-28 md:py-0">
-      {/* Background Video with Overlay */}
-      <div className="absolute inset-0 z-0">
+    <section id="home" className="relative min-h-screen flex flex-col md:flex-row items-center justify-start md:justify-center overflow-hidden pt-24 pb-12 px-6 md:px-0 md:py-0">
+      {/* Background/Banner Video with Overlay & Responsive Mute Button */}
+      <div className="w-full md:absolute md:inset-0 z-0 aspect-video md:aspect-auto h-auto md:h-full rounded-2xl md:rounded-none overflow-hidden mb-6 md:mb-0 shadow-2xl md:shadow-none border border-white/10 md:border-none relative">
         <video
           ref={videoRef}
           src="https://res.cloudinary.com/ddfuc0ktg/video/upload/v1780138129/xfmdkg3imxd15vv7g3jh.mp4"
@@ -77,32 +77,30 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0" style={{
+        {/* Desktop overlay */}
+        <div className="hidden md:block absolute inset-0" style={{
           background: theme === "light"
             ? "linear-gradient(to bottom, rgba(245, 245, 245, 0.7), rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.9))"
             : "linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 1))"
         }} />
+        {/* Mobile overlay */}
+        <div className="md:hidden absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+
+        {/* Responsive Mute/Unmute Toggle Button */}
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-4 right-4 md:bottom-24 md:right-10 z-20 p-2.5 md:p-4 rounded-full border transition-all duration-300 bg-black/60 md:bg-[rgba(212,175,55,0.1)] border-white/20 md:border-[rgba(212,175,55,0.5)] text-white md:text-gold-400 hover:scale-110"
+          aria-label={isMuted ? "Unmute video" : "Mute video"}
+        >
+          {isMuted ? (
+            <VolumeX className="w-4 h-4 md:w-6 md:h-6 text-gold-400" />
+          ) : (
+            <Volume2 className="w-4 h-4 md:w-6 md:h-6 text-gold-400" />
+          )}
+        </button>
       </div>
 
-      {/* Mute/Unmute Toggle Button */}
-      <button
-        onClick={toggleMute}
-        className="absolute bottom-24 right-10 z-20 p-4 rounded-full border transition-all duration-300 hover:scale-110"
-        style={{
-          backgroundColor: "rgba(212, 175, 55, 0.1)",
-          borderColor: "rgba(212, 175, 55, 0.5)",
-          color: "var(--gold-400)"
-        }}
-        aria-label={isMuted ? "Unmute video" : "Mute video"}
-      >
-        {isMuted ? (
-          <VolumeX className="w-6 h-6 text-gold-400" />
-        ) : (
-          <Volume2 className="w-6 h-6 text-gold-400" />
-        )}
-      </button>
-
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-28 md:mt-20">
+      <div className="relative z-10 text-center w-full max-w-4xl mx-auto mt-4 md:mt-20">
         <FadeIn delay={0.2}>
           <span className="block text-gold-400 text-sm md:text-base uppercase tracking-[0.3em] mb-6">
             Warm Family Kitchen
