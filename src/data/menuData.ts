@@ -228,7 +228,7 @@ export const menuItems: MenuItem[] = [
     name: "Ham & Cheese Toastie",
     price: 25,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1538220856186-0be0e085984d?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "22",
