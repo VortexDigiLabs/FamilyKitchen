@@ -235,14 +235,14 @@ export const menuItems: MenuItem[] = [
     name: "Bacon, Egg & Cheese Toastie",
     price: 40,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1600431521938-f311df781980?auto=format&fit=crop&w=600&q=80"
+    image: "/bacon_egg_cheese_toastie.png"
   },
   {
     id: "104",
     name: "Bacon & Chicken Mayo Toastie",
     price: 50,
     category: "Toasties",
-    image: "https://images.unsplash.com/photo-1621800041134-c2741d48f4fa?auto=format&fit=crop&w=600&q=80"
+    image: "/bacon_chicken_mayo_toastie.png"
   },
 
   // === ROLLS ===
@@ -281,7 +281,7 @@ export const menuItems: MenuItem[] = [
     name: "Grilled Chicken 1/4 with Chips",
     price: 55,
     category: "Grilled Chicken Meals",
-    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "31",
