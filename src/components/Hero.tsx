@@ -65,7 +65,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden py-28 md:py-0">
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
         <video
@@ -102,7 +102,7 @@ export default function Hero() {
         )}
       </button>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-28 md:mt-20">
         <FadeIn delay={0.2}>
           <span className="block text-gold-400 text-sm md:text-base uppercase tracking-[0.3em] mb-6">
             Warm Family Kitchen
@@ -110,7 +110,7 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.4}>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight" style={{
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight" style={{
             color: theme === "light" ? "#0a0a0a" : "#ffffff"
           }}>
             Honest Food, <br />
@@ -127,18 +127,18 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.8}>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto max-w-xs sm:max-w-none mx-auto">
             <a
               href="https://chat.whatsapp.com/KlhogF8oi3D3dqaqhzfw4d"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-gold-400 text-charcoal-950 text-sm uppercase tracking-widest font-medium hover:bg-gold-500 transition-colors duration-300"
+              className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-gold-400 text-charcoal-950 text-sm uppercase tracking-wider font-medium hover:bg-gold-500 transition-colors duration-300 text-center"
             >
               Order via WhatsApp
             </a>
             <a
               href="#about"
-              className="w-full sm:w-auto px-8 py-4 border text-sm uppercase tracking-widest font-medium hover:border-gold-400 hover:text-gold-400 transition-colors duration-300"
+              className="w-full sm:w-auto px-6 sm:px-8 py-4 border text-sm uppercase tracking-wider font-medium hover:border-gold-400 hover:text-gold-400 transition-colors duration-300 text-center"
               style={{
                 borderColor: theme === "light" ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.3)",
                 color: theme === "light" ? "#0a0a0a" : "#ffffff"
