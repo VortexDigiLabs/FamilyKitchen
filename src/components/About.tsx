@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FadeIn from "./FadeIn";
 import { useTheme } from "../context/ThemeContext";
+import { useAssets } from "../context/AssetContext";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CARUSAL_IMAGES = [
@@ -49,8 +50,9 @@ function CarouselCard({ imageUrl, altText }: CarouselCardProps) {
 const getModulo = (n: number, m: number) => ((n % m) + m) % m;
 
 function Carousel() {
+  const { aboutImages } = useAssets();
   const [active, setActive] = useState(2); // Start at index 2 (third image)
-  const count = CARUSAL_IMAGES.length;
+  const count = aboutImages.length;
 
   return (
     <div className="carousel-wrapper">
@@ -63,7 +65,7 @@ function Carousel() {
           <ChevronLeft size={24} />
         </button>
         
-        {CARUSAL_IMAGES.map((url, i) => {
+        {aboutImages.map((url, i) => {
           const activeIdx = getModulo(active, count);
           let diff = i - activeIdx;
           

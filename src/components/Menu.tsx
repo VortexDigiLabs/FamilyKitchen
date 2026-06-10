@@ -1,11 +1,13 @@
 import { useState } from "react";
 import FadeIn from "./FadeIn";
 import { useCart } from "../context/CartContext";
-import { categories, menuItems } from "../data/menuData";
+import { categories } from "../data/menuData";
+import { useAssets } from "../context/AssetContext";
 import { Plus } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 export default function Menu() {
+  const { menuItems } = useAssets();
   const [activeCategory, setActiveCategory] = useState("All");
   const { addToCart } = useCart();
   const { theme } = useTheme();
