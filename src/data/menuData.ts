@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
     description: "Loaded quarter loaf bread filled with chips, polony, optional Russian sausage, and cheese. Served with Chips on the Side.",
     price: 55,
     category: "Kota",
-    image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781100066/family_kitchen_manual/c8sdcewgqryecjeedg1d.png"
+    image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781110608/family_kitchen_manual/c0lmniuvl7pjnwu3gml4.png"
   },
 
   // === RUSSIANS ===
