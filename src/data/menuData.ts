@@ -82,16 +82,16 @@ export const menuItems: MenuItem[] = [
   // === KOTA ===
   {
     id: "94",
-    name: "Kota (Chips, Egg, Russian & Cheese)",
-    description: "Traditional street food hollowed-out quarter loaf bread filled with chips, egg, Russian sausage, and melted cheese.",
+    name: "Kota (Chips, Egg, Russian [Optional] & Cheese)",
+    description: "Traditional street food hollowed-out quarter loaf bread filled with chips, egg, optional Russian sausage, and melted cheese.",
     price: 35,
     category: "Kota",
     image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781099948/family_kitchen_manual/ny8n9mwclumy15kknaqc.png"
   },
   {
     id: "95",
-    name: "Kota Loaded (Chips, Polony, Russian & Cheese)",
-    description: "Loaded quarter loaf bread filled with chips, polony, Russian sausage, and cheese. Served with Chips on the Side.",
+    name: "Kota Loaded (Chips, Polony, Russian [Optional] & Cheese)",
+    description: "Loaded quarter loaf bread filled with chips, polony, optional Russian sausage, and cheese. Served with Chips on the Side.",
     price: 55,
     category: "Kota",
     image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781100066/family_kitchen_manual/c8sdcewgqryecjeedg1d.png"
