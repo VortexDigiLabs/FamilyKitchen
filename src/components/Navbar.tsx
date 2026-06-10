@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, UtensilsCrossed, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
-export default function Navbar() {
+export default function Navbar({ onOpenAdmin }: { onOpenAdmin: () => void }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -56,10 +56,19 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                onClick={onOpenAdmin}
+                className="text-sm uppercase tracking-widest hover:text-gold-400 transition-colors duration-300 cursor-pointer font-medium"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                Admin
+              </button>
+            </li>
           </ul>
           <button
             onClick={toggleTheme}
-            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-400 hover:text-charcoal-950 transition-colors"
+            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-400 hover:text-charcoal-950 transition-colors cursor-pointer"
             style={{ color: "var(--text-primary)" }}
           >
             {theme === "dark" ? (
@@ -134,6 +143,21 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                onClick={() => {
+                  onOpenAdmin();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full text-left block py-4 text-sm uppercase tracking-widest border-b transition-colors"
+                style={{
+                  color: "var(--text-secondary)",
+                  borderBottomColor: "var(--border-color)",
+                }}
+              >
+                Admin Panel
+              </button>
+            </li>
             <li className="pt-6 pb-2">
               <a
                 href="https://chat.whatsapp.com/KlhogF8oi3D3dqaqhzfw4d"

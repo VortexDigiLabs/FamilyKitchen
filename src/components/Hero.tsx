@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import FadeIn from "./FadeIn";
 import { useTheme } from "../context/ThemeContext";
+import { useAssets } from "../context/AssetContext";
 import { Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
   const { theme } = useTheme();
+  const { heroVideo } = useAssets();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playCount, setPlayCount] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -70,7 +72,7 @@ export default function Hero() {
       <div className="w-full md:absolute md:inset-0 z-0 aspect-video md:aspect-auto h-auto md:h-full rounded-2xl md:rounded-none overflow-hidden mb-6 md:mb-0 shadow-2xl md:shadow-none border border-white/10 md:border-none relative">
         <video
           ref={videoRef}
-          src="https://res.cloudinary.com/ddfuc0ktg/video/upload/v1780138129/xfmdkg3imxd15vv7g3jh.mp4"
+          src={heroVideo}
           autoPlay
           muted={isMuted}
           loop
