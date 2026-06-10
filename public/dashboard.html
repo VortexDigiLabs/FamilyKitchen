@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudinary Asset Upload Dashboard</title>
+  <!-- Google Fonts Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            charcoal: {
+              50: '#f5f5f5',
+              100: '#e9e9e9',
+              200: '#d1d1d1',
+              300: '#a9a9a9',
+              400: '#7e7e7e',
+              500: '#5c5c5c',
+              600: '#464646',
+              700: '#343434',
+              800: '#222222',
+              900: '#151515',
+              950: '#0a0a0a',
+            },
+            gold: {
+              50: '#faf8ee',
+              100: '#f3eecf',
+              200: '#e8dc9f',
+              300: '#dac368',
+              400: '#cca73e',
+              500: '#d4af37', // Brand Gold
+              600: '#a37c22',
+              700: '#7d5c19',
+              800: '#5a4114',
+              900: '#3c2b0e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.03) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #151515;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #343434;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #d4af37;
+    }
+  </style>
+</head>
+<body class="text-charcoal-100 min-h-screen flex flex-col font-sans antialiased custom-scrollbar">
+
+  <!-- Header -->
+  <header className="border-b border-charcoal-800 bg-charcoal-900/40 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20 shadow-lg shadow-gold-500/5">
+          <i data-lucide="cloud-lightning" class="w-5 h-5 text-gold-500"></i>
+        </div>
+        <div>
+          <h1 class="text-lg font-display font-bold tracking-wide text-white">Cloudinary Asset Dashboard</h1>
+          <p class="text-[9px] text-charcoal-400 font-semibold uppercase tracking-widest mt-0.5">Standalone Upload Utility</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-charcoal-400">
+        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+          Ready to Upload
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="max-w-7xl mx-auto px-6 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    <!-- Left Panel: Configurations & Dropzone (Col-span 4) -->
+    <section class="lg:col-span-4 flex flex-col gap-6">
+      
+      <!-- Configurations Card -->
+      <div class="p-6 rounded-2xl bg-charcoal-900 border border-charcoal-800 shadow-xl">
+        <h2 class="font-display font-bold text-base text-gold-500 mb-4 flex items-center gap-2">
+          <i data-lucide="settings" class="w-4 h-4 text-gold-500"></i>
+          Settings Configuration
+        </h2>
+
+        <form id="settingsForm" class="flex flex-col gap-4">
+          <div class="flex flex-col gap-1.5">
+            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest">Cloud Name</label>
+            <input 
+              type="text" 
+              id="cloudNameInput"
+              class="w-full bg-charcoal-950 border border-charcoal-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors text-sm font-mono"
+              placeholder="e.g. ddfuc0ktg"
+              required
+            >
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest">Unsigned Upload Preset</label>
+            <input 
+              type="text" 
+              id="uploadPresetInput"
+              class="w-full bg-charcoal-950 border border-charcoal-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors text-sm font-mono"
+              placeholder="e.g. unsigned_preset_name"
+              required
+            >
+          </div>
+
+          <div class="p-3 bg-charcoal-950/80 rounded-xl border border-charcoal-850 text-[11px] text-charcoal-400 leading-relaxed flex gap-2.5">
+            <i data-lucide="info" class="w-4 h-4 text-gold-500 shrink-0 mt-0.5"></i>
+            <p>
+              Inputs are saved automatically to your local browser storage. Make sure your upload preset in Cloudinary is set to <strong>Unsigned</strong> signing mode.
+            </p>
+          </div>
+
+          <button 
+            type="submit"
+            class="w-full mt-2 px-5 py-3 bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold rounded-xl text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold-500/10"
+          >
+            <i data-lucide="check" class="w-4 h-4"></i>
+            Save Credentials
+          </button>
+        </form>
+      </div>
+
+      <!-- Dropzone Panel -->
+      <div class="flex flex-col gap-2.5">
+        <h2 class="font-display font-bold text-sm text-white px-1">Upload New Asset</h2>
+        
+        <div 
+          id="dropzone"
+          class="border-2 border-dashed border-charcoal-800 bg-charcoal-900 rounded-2xl p-8 flex flex-col items-center justify-center text-center cursor-pointer transition-all min-h-[220px] hover:border-charcoal-700 hover:bg-charcoal-900/60 shadow-xl"
+        >
+          <input 
+            type="file" 
+            id="fileInput" 
+            accept="image/*,video/*" 
+            class="hidden" 
+          />
+          
+          <!-- Idle view -->
+          <div id="dropzoneIdle" class="flex flex-col items-center gap-3">
+            <div class="w-14 h-14 rounded-full bg-charcoal-950 flex items-center justify-center border border-charcoal-850 shadow-inner">
+              <i data-lucide="upload-cloud" class="w-7 h-7 text-charcoal-400"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-charcoal-200">Drag & Drop file to upload</p>
+              <p class="text-xs text-charcoal-400 mt-1">or click to browse your computer</p>
+            </div>
+            <p class="text-[9px] font-mono text-charcoal-500 uppercase tracking-widest mt-2">Images or Videos (mp4)</p>
+          </div>
+
+          <!-- Loading view -->
+          <div id="dropzoneLoading" class="hidden flex flex-col items-center gap-3 w-full max-w-[240px]">
+            <i data-lucide="refresh-cw" class="w-10 h-10 text-gold-500 animate-spin"></i>
+            <span class="text-sm font-semibold text-white">Uploading to Cloudinary...</span>
+            <div class="w-full bg-charcoal-950 h-2 rounded-full overflow-hidden border border-charcoal-850 mt-1">
+              <div 
+                id="progressBar"
+                class="bg-gradient-to-r from-gold-500 to-amber-600 h-full rounded-full transition-all duration-300 w-0"
+              ></div>
+            </div>
+            <span id="progressPercent" class="text-xs text-charcoal-400 font-mono">0% Complete</span>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <div id="alertError" class="hidden p-3.5 bg-rose-500/10 border border-rose-500/20 rounded-xl text-rose-300 text-xs flex items-start gap-2.5">
+          <i data-lucide="alert-circle" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+          <span id="errorMsg">Upload failed.</span>
+        </div>
+
+        <div id="alertSuccess" class="hidden p-3.5 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-300 text-xs flex items-start gap-2.5">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+          <span id="successMsg">Upload completed!</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Panel: Upload History Library (Col-span 8) -->
+    <section class="lg:col-span-8 flex flex-col gap-6">
+      
+      <div class="flex justify-between items-center border-b border-charcoal-800 pb-4">
+        <div>
+          <h2 class="font-display font-bold text-lg text-white">Uploaded Gallery History</h2>
+          <p class="text-xs text-charcoal-400 mt-0.5">Manage and retrieve secure secure URLs for your code</p>
+        </div>
+        
+        <!-- Search bar -->
+        <div class="relative">
+          <i data-lucide="search" class="w-4 h-4 text-charcoal-500 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input 
+            type="text" 
+            id="searchInput"
+            class="bg-charcoal-900 border border-charcoal-850 rounded-xl pl-10 pr-4 py-2 text-white focus:outline-none focus:border-gold-500 transition-colors text-xs w-[180px] sm:w-[260px] font-sans"
+            placeholder="Search history..."
+          >
+        </div>
+      </div>
+
+      <!-- History Grid -->
+      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Empty state -->
+      <div id="galleryEmpty" class="hidden py-16 text-center flex flex-col items-center justify-center gap-3 bg-charcoal-900/20 border border-charcoal-900 rounded-2xl">
+        <div class="w-12 h-12 rounded-full bg-charcoal-900 flex items-center justify-center border border-charcoal-850">
+          <i data-lucide="image" class="w-6 h-6 text-charcoal-600"></i>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-base text-charcoal-250">No uploaded assets found</h3>
+          <p class="text-xs text-charcoal-500 max-w-xs mx-auto mt-1 leading-relaxed">
+            Configure your Cloudinary credentials and drop files inside the upload box to build your bookmark list.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 border-t border-charcoal-900 bg-charcoal-950 mt-12 text-center text-xs text-charcoal-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <p>Cloudinary Upload Utility &copy; 2026. Standalone dashboard webpage.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Config values
+    let cloudName = localStorage.getItem("cloudinary_cloud_name") || "";
+    let uploadPreset = localStorage.getItem("cloudinary_upload_preset") || "";
+    
+    // UI Elements
+    const cloudNameInput = document.getElementById("cloudNameInput");
+    const uploadPresetInput = document.getElementById("uploadPresetInput");
+    const settingsForm = document.getElementById("settingsForm");
+    const dropzone = document.getElementById("dropzone");
+    const fileInput = document.getElementById("fileInput");
+    const dropzoneIdle = document.getElementById("dropzoneIdle");
+    const dropzoneLoading = document.getElementById("dropzoneLoading");
+    const progressBar = document.getElementById("progressBar");
+    const progressPercent = document.getElementById("progressPercent");
+    const alertError = document.getElementById("alertError");
+    const errorMsg = document.getElementById("errorMsg");
+    const alertSuccess = document.getElementById("alertSuccess");
+    const successMsg = document.getElementById("successMsg");
+    const galleryGrid = document.getElementById("galleryGrid");
+    const galleryEmpty = document.getElementById("galleryEmpty");
+    const searchInput = document.getElementById("searchInput");
+
+    // Initialize inputs
+    cloudNameInput.value = cloudName;
+    uploadPresetInput.value = uploadPreset;
+
+    // Load History Library
+    let uploadHistory = [];
+    try {
+      const saved = localStorage.getItem("cloudinary_history_library");
+      uploadHistory = saved ? JSON.parse(saved) : [];
+    } catch {
+      uploadHistory = [];
+    }
+
+    // Save Settings
+    settingsForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      cloudName = cloudNameInput.value.trim();
+      uploadPreset = uploadPresetInput.value.trim();
+      localStorage.setItem("cloudinary_cloud_name", cloudName);
+      localStorage.setItem("cloudinary_upload_preset", uploadPreset);
+      
+      alertSuccess.classList.remove("hidden");
+      successMsg.textContent = "Settings saved successfully!";
+      setTimeout(() => alertSuccess.classList.add("hidden"), 3000);
+    });
+
+    // Copy helper
+    function copyToClipboard(text, btnId) {
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          btn.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5"></i> Copied`;
+          btn.classList.remove("bg-charcoal-800", "text-charcoal-300");
+          btn.classList.add("bg-gold-500", "text-charcoal-950");
+          lucide.createIcons();
+          
+          setTimeout(() => {
+            btn.innerHTML = `<i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy URL`;
+            btn.classList.remove("bg-gold-500", "text-charcoal-950");
+            btn.classList.add("bg-charcoal-800", "text-charcoal-300");
+            lucide.createIcons();
+          }, 2000);
+        }
+      });
+    }
+
+    // Delete helper
+    window.deleteItem = function(id) {
+      uploadHistory = uploadHistory.filter(item => item.id !== id);
+      localStorage.setItem("cloudinary_history_library", JSON.stringify(uploadHistory));
+      renderGallery();
+    }
+
+    // Copy handler global
+    window.copyUrl = function(url, btnId) {
+      copyToClipboard(url, btnId);
+    }
+
+    // Format Bytes
+    function formatBytes(bytes, decimals = 1) {
+      if (bytes === 0) return "0 Bytes";
+      const k = 1024;
+      const dm = decimals < 0 ? 0 : decimals;
+      const sizes = ["Bytes", "KB", "MB", "GB"];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
+    }
+
+    // Render Gallery function
+    function renderGallery() {
+      const query = searchInput.value.toLowerCase().trim();
+      const filtered = uploadHistory.filter(item => {
+        return item.name.toLowerCase().includes(query) || item.url.toLowerCase().includes(query);
+      });
+
+      if (filtered.length === 0) {
+        galleryGrid.classList.add("hidden");
+        galleryEmpty.classList.remove("hidden");
+        return;
+      }
+
+      galleryGrid.classList.remove("hidden");
+      galleryEmpty.classList.add("hidden");
+      
+      galleryGrid.innerHTML = filtered.map(item => {
+        const btnId = `copyBtn_${item.id}`;
+        return `
+          <div class="group rounded-xl border border-charcoal-800 bg-charcoal-900/40 p-3.5 flex flex-col gap-3.5 hover:border-charcoal-700 hover:bg-charcoal-900 transition-all duration-300 shadow-lg">
+            <div class="aspect-video w-full rounded-lg bg-black/60 border border-charcoal-850 overflow-hidden relative flex items-center justify-center">
+              ${item.type === "video" 
+                ? `<video src="${item.url}" muted class="w-full h-full object-cover"></video>` 
+                : `<img src="${item.url}" alt="${item.name}" loading="lazy" class="w-full h-full object-cover" />`
+              }
+              <div class="absolute top-2 right-2 px-1.5 py-0.5 rounded-full text-[9px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                Cloudinary
+              </div>
+            </div>
+            
+            <div class="flex-grow flex flex-col justify-between">
+              <div>
+                <h4 class="font-display text-sm font-semibold text-white line-clamp-1 group-hover:text-gold-500 transition-colors">
+                  ${item.name}
+                </h4>
+                
+                <div class="flex flex-col gap-1 mt-2 text-[10px] text-charcoal-400">
+                  <span class="flex items-center gap-1.5">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5 shrink-0 text-charcoal-500"></i>
+                    ${new Date(item.uploadedAt).toLocaleDateString()}
+                  </span>
+                  <span class="flex items-center gap-1.5">
+                    <i data-lucide="hard-drive" class="w-3.5 h-3.5 shrink-0 text-charcoal-500"></i>
+                    ${item.size}
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between border-t border-charcoal-800/80 pt-2.5 mt-2.5">
+                <button
+                  onclick="deleteItem('${item.id}')"
+                  class="p-1.5 rounded-lg bg-charcoal-850 hover:bg-rose-500/20 text-charcoal-400 hover:text-rose-400 transition-colors cursor-pointer border border-charcoal-800"
+                  title="Delete from history"
+                >
+                  <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                </button>
+
+                <button
+                  id="${btnId}"
+                  onclick="copyUrl('${item.url}', '${btnId}')"
+                  class="px-3 py-1.5 bg-charcoal-800 hover:bg-gold-500 hover:text-charcoal-950 text-charcoal-300 rounded-lg text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 transition-all cursor-pointer border border-charcoal-700 hover:border-gold-500"
+                >
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy URL
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      // Re-trigger Lucide Icons
+      lucide.createIcons();
+    }
+
+    // Search input handler
+    searchInput.addEventListener("input", renderGallery);
+
+    // Initial render
+    renderGallery();
+
+    // Trigger File Input Click
+    dropzone.addEventListener("click", () => fileInput.click());
+
+    // Drag events
+    dropzone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropzone.classList.add("border-gold-500", "bg-gold-500/5");
+    });
+
+    dropzone.addEventListener("dragleave", () => {
+      dropzone.classList.remove("border-gold-500", "bg-gold-500/5");
+    });
+
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      dropzone.classList.remove("border-gold-500", "bg-gold-500/5");
+      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        handleUpload(e.dataTransfer.files[0]);
+      }
+    });
+
+    fileInput.addEventListener("change", (e) => {
+      if (e.target.files && e.target.files[0]) {
+        handleUpload(e.target.files[0]);
+      }
+    });
+
+    // Perform file upload
+    function handleUpload(file) {
+      if (!cloudName || !uploadPreset) {
+        alertError.classList.remove("hidden");
+        errorMsg.textContent = "Please configure your Cloudinary credentials first.";
+        return;
+      }
+
+      alertError.classList.add("hidden");
+      alertSuccess.classList.add("hidden");
+      
+      dropzoneIdle.classList.add("hidden");
+      dropzoneLoading.classList.remove("hidden");
+      progressBar.style.width = "0%";
+      progressPercent.textContent = "0% Complete";
+
+      const isVideo = file.type.startsWith("video/");
+      const endpoint = `https://api.cloudinary.com/v1_1/${cloudName}/${isVideo ? "video" : "image"}/upload`;
+
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", uploadPreset);
+      formData.append("folder", "family_kitchen_manual");
+
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", endpoint);
+
+      xhr.upload.onprogress = (e) => {
+        if (e.lengthComputable) {
+          const percent = Math.round((e.loaded / e.total) * 100);
+          progressBar.style.width = `${percent}%`;
+          progressPercent.textContent = `${percent}% Complete`;
+        }
+      };
+
+      xhr.onload = () => {
+        dropzoneIdle.classList.remove("hidden");
+        dropzoneLoading.classList.add("hidden");
+
+        if (xhr.status >= 200 && xhr.status < 300) {
+          try {
+            const res = JSON.parse(xhr.responseText);
+            const newItem = {
+              id: Math.random().toString(36).substring(2, 9),
+              name: file.name,
+              url: res.secure_url,
+              type: isVideo ? "video" : "image",
+              uploadedAt: Date.now(),
+              size: formatBytes(file.size)
+            };
+            
+            uploadHistory = [newItem, ...uploadHistory];
+            localStorage.setItem("cloudinary_history_library", JSON.stringify(uploadHistory));
+            
+            alertSuccess.classList.remove("hidden");
+            successMsg.textContent = `Successfully uploaded: ${file.name}`;
+            
+            renderGallery();
+          } catch {
+            alertError.classList.remove("hidden");
+            errorMsg.textContent = "Failed to parse Cloudinary upload response.";
+          }
+        } else {
+          try {
+            const res = JSON.parse(xhr.responseText);
+            alertError.classList.remove("hidden");
+            errorMsg.textContent = res.error?.message || "Upload failed.";
+          } catch {
+            alertError.classList.remove("hidden");
+            errorMsg.textContent = `Server error: Status ${xhr.status}`;
+          }
+        }
+      };
+
+      xhr.onerror = () => {
+        dropzoneIdle.classList.remove("hidden");
+        dropzoneLoading.classList.add("hidden");
+        alertError.classList.remove("hidden");
+        errorMsg.textContent = "A network error occurred during upload.";
+      };
+
+      xhr.send(formData);
+    }
+  </script>
+</body>
+</html>
