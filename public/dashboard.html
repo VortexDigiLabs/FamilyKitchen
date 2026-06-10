@@ -78,7 +78,7 @@
 <body class="text-charcoal-100 min-h-screen flex flex-col font-sans antialiased custom-scrollbar">
 
   <!-- Header -->
-  <header className="border-b border-charcoal-800 bg-charcoal-900/40 sticky top-0 z-50 backdrop-blur-md">
+  <header class="border-b border-charcoal-800 bg-charcoal-900/40 sticky top-0 z-50 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20 shadow-lg shadow-gold-500/5">
@@ -86,11 +86,11 @@
         </div>
         <div>
           <h1 class="text-lg font-display font-bold tracking-wide text-white">Cloudinary Asset Dashboard</h1>
-          <p class="text-[9px] text-charcoal-400 font-semibold uppercase tracking-widest mt-0.5">Standalone Upload Utility</p>
+          <p class="text-[9px] text-charcoal-400 font-semibold uppercase tracking-widest mt-0.5 font-sans">Standalone Upload Utility</p>
         </div>
       </div>
       
-      <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-charcoal-400">
+      <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-charcoal-400 font-sans">
         <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
           Ready to Upload
@@ -102,7 +102,7 @@
   <!-- Main Content Layout -->
   <main class="max-w-7xl mx-auto px-6 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
     
-    <!-- Left Panel: Configurations & Dropzone (Col-span 4) -->
+    <!-- Left Column: Settings Configuration (Col-span 4) -->
     <section class="lg:col-span-4 flex flex-col gap-6">
       
       <!-- Configurations Card -->
@@ -114,7 +114,7 @@
 
         <form id="settingsForm" class="flex flex-col gap-4">
           <div class="flex flex-col gap-1.5">
-            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest">Cloud Name</label>
+            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest font-sans">Cloud Name</label>
             <input 
               type="text" 
               id="cloudNameInput"
@@ -124,7 +124,7 @@
             >
           </div>
           <div class="flex flex-col gap-1.5">
-            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest">Unsigned Upload Preset</label>
+            <label class="text-[10px] font-bold text-charcoal-400 uppercase tracking-widest font-sans">Unsigned Upload Preset</label>
             <input 
               type="text" 
               id="uploadPresetInput"
@@ -137,13 +137,13 @@
           <div class="p-3 bg-charcoal-950/80 rounded-xl border border-charcoal-850 text-[11px] text-charcoal-400 leading-relaxed flex gap-2.5">
             <i data-lucide="info" class="w-4 h-4 text-gold-500 shrink-0 mt-0.5"></i>
             <p>
-              Inputs are saved automatically to your local browser storage. Make sure your upload preset in Cloudinary is set to <strong>Unsigned</strong> signing mode.
+              Your settings are saved inside your browser. Make sure your upload preset in Cloudinary is set to <strong>Unsigned</strong> mode.
             </p>
           </div>
 
           <button 
             type="submit"
-            class="w-full mt-2 px-5 py-3 bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold rounded-xl text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold-500/10"
+            class="w-full mt-2 px-5 py-3 bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold rounded-xl text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold-500/10 font-sans"
           >
             <i data-lucide="check" class="w-4 h-4"></i>
             Save Credentials
@@ -151,13 +151,29 @@
         </form>
       </div>
 
-      <!-- Dropzone Panel -->
-      <div class="flex flex-col gap-2.5">
-        <h2 class="font-display font-bold text-sm text-white px-1">Upload New Asset</h2>
+      <!-- Quick Tips -->
+      <div class="p-5 rounded-2xl bg-charcoal-900/60 border border-charcoal-850 text-xs text-charcoal-450 leading-relaxed flex flex-col gap-2 shadow-md">
+        <span class="font-bold text-charcoal-300 uppercase tracking-wider text-[10px] flex items-center gap-1.5 font-sans">
+          <i data-lucide="help-circle" class="w-4 h-4 text-gold-500"></i> Troubleshooting Tips
+        </span>
+        <ul class="list-disc pl-4 flex flex-col gap-1.5 mt-1">
+          <li><strong>"Unknown API key" error:</strong> This means your Cloud Name is wrong. In Cloudinary, a Cloud Name cannot have spaces. Based on your site, yours should be set to <code class="text-gold-400 font-mono">ddfuc0ktg</code>.</li>
+          <li><strong>"Upload preset not found" error:</strong> Verify that the preset name matches exactly what is in your Cloudinary upload settings.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Right Column: Large Dropzone & History (Col-span 8) -->
+    <section class="lg:col-span-8 flex flex-col gap-6">
+      
+      <!-- Large Prominent Uploader Dropzone -->
+      <div class="flex flex-col gap-3">
+        <h2 class="font-display font-bold text-base text-white px-1">Upload Assets</h2>
         
         <div 
           id="dropzone"
-          class="border-2 border-dashed border-charcoal-800 bg-charcoal-900 rounded-2xl p-8 flex flex-col items-center justify-center text-center cursor-pointer transition-all min-h-[220px] hover:border-charcoal-700 hover:bg-charcoal-900/60 shadow-xl"
+          class="border-2 border-dashed border-charcoal-800 bg-charcoal-900 rounded-3xl p-12 flex flex-col items-center justify-center text-center cursor-pointer transition-all min-h-[300px] hover:border-gold-500/50 hover:bg-charcoal-900/60 shadow-xl relative group"
         >
           <input 
             type="file" 
@@ -167,25 +183,27 @@
           />
           
           <!-- Idle view -->
-          <div id="dropzoneIdle" class="flex flex-col items-center gap-3">
-            <div class="w-14 h-14 rounded-full bg-charcoal-950 flex items-center justify-center border border-charcoal-850 shadow-inner">
-              <i data-lucide="upload-cloud" class="w-7 h-7 text-charcoal-400"></i>
+          <div id="dropzoneIdle" class="flex flex-col items-center gap-4 py-4">
+            <div class="w-20 h-20 rounded-full bg-charcoal-950 flex items-center justify-center border border-charcoal-800 shadow-inner group-hover:scale-105 transition-transform duration-300">
+              <i data-lucide="upload-cloud" class="w-10 h-10 text-charcoal-400 group-hover:text-gold-500 transition-colors"></i>
             </div>
             <div>
-              <p class="text-sm font-semibold text-charcoal-200">Drag & Drop file to upload</p>
-              <p class="text-xs text-charcoal-400 mt-1">or click to browse your computer</p>
+              <p class="text-base font-display font-bold text-white">Drag & Drop files here to upload</p>
+              <p class="text-sm text-charcoal-400 mt-1.5 font-sans">or click to browse your computer files</p>
             </div>
-            <p class="text-[9px] font-mono text-charcoal-500 uppercase tracking-widest mt-2">Images or Videos (mp4)</p>
+            <p class="text-[10px] font-mono text-charcoal-550 uppercase tracking-widest mt-2 bg-charcoal-950 px-3 py-1 rounded-full border border-charcoal-850">
+              Supports Images (PNG, JPG, WEBP, GIF) and Videos (MP4)
+            </p>
           </div>
 
           <!-- Loading view -->
-          <div id="dropzoneLoading" class="hidden flex flex-col items-center gap-3 w-full max-w-[240px]">
-            <i data-lucide="refresh-cw" class="w-10 h-10 text-gold-500 animate-spin"></i>
-            <span class="text-sm font-semibold text-white">Uploading to Cloudinary...</span>
-            <div class="w-full bg-charcoal-950 h-2 rounded-full overflow-hidden border border-charcoal-850 mt-1">
+          <div id="dropzoneLoading" class="hidden flex flex-col items-center gap-4 w-full max-w-[320px] py-4">
+            <i data-lucide="refresh-cw" class="w-12 h-12 text-gold-500 animate-spin"></i>
+            <span class="text-base font-display font-bold text-white">Uploading to Cloudinary...</span>
+            <div class="w-full bg-charcoal-950 h-3 rounded-full overflow-hidden border border-charcoal-850 mt-1">
               <div 
                 id="progressBar"
-                class="bg-gradient-to-r from-gold-500 to-amber-600 h-full rounded-full transition-all duration-300 w-0"
+                class="bg-gradient-to-r from-gold-500 to-amber-500 h-full rounded-full transition-all duration-300 w-0"
               ></div>
             </div>
             <span id="progressPercent" class="text-xs text-charcoal-400 font-mono">0% Complete</span>
@@ -193,55 +211,53 @@
         </div>
 
         <!-- Alerts -->
-        <div id="alertError" class="hidden p-3.5 bg-rose-500/10 border border-rose-500/20 rounded-xl text-rose-300 text-xs flex items-start gap-2.5">
-          <i data-lucide="alert-circle" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+        <div id="alertError" class="hidden p-4 bg-rose-500/10 border border-rose-500/20 rounded-2xl text-rose-300 text-sm flex items-start gap-2.5 shadow-lg">
+          <i data-lucide="alert-circle" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
           <span id="errorMsg">Upload failed.</span>
         </div>
 
-        <div id="alertSuccess" class="hidden p-3.5 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-300 text-xs flex items-start gap-2.5">
-          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+        <div id="alertSuccess" class="hidden p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl text-emerald-300 text-sm flex items-start gap-2.5 shadow-lg">
+          <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
           <span id="successMsg">Upload completed!</span>
         </div>
       </div>
 
-    </section>
-
-    <!-- Right Panel: Upload History Library (Col-span 8) -->
-    <section class="lg:col-span-8 flex flex-col gap-6">
-      
-      <div class="flex justify-between items-center border-b border-charcoal-800 pb-4">
-        <div>
-          <h2 class="font-display font-bold text-lg text-white">Uploaded Gallery History</h2>
-          <p class="text-xs text-charcoal-400 mt-0.5">Manage and retrieve secure secure URLs for your code</p>
+      <!-- Gallery History Section -->
+      <div class="flex flex-col gap-4 mt-4">
+        <div class="flex justify-between items-center border-b border-charcoal-800 pb-4">
+          <div>
+            <h2 class="font-display font-bold text-base text-white">Uploaded Gallery History</h2>
+            <p class="text-xs text-charcoal-400 mt-0.5 font-sans">Copy Cloudinary URLs to insert into the restaurant website</p>
+          </div>
+          
+          <!-- Search bar -->
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 text-charcoal-500 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="text" 
+              id="searchInput"
+              class="bg-charcoal-900 border border-charcoal-850 rounded-xl pl-10 pr-4 py-2 text-white focus:outline-none focus:border-gold-500 transition-colors text-xs w-[180px] sm:w-[240px] font-sans"
+              placeholder="Search uploads..."
+            >
+          </div>
         </div>
-        
-        <!-- Search bar -->
-        <div class="relative">
-          <i data-lucide="search" class="w-4 h-4 text-charcoal-500 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-          <input 
-            type="text" 
-            id="searchInput"
-            class="bg-charcoal-900 border border-charcoal-850 rounded-xl pl-10 pr-4 py-2 text-white focus:outline-none focus:border-gold-500 transition-colors text-xs w-[180px] sm:w-[260px] font-sans"
-            placeholder="Search history..."
-          >
-        </div>
-      </div>
 
-      <!-- History Grid -->
-      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Rendered dynamically -->
-      </div>
-
-      <!-- Empty state -->
-      <div id="galleryEmpty" class="hidden py-16 text-center flex flex-col items-center justify-center gap-3 bg-charcoal-900/20 border border-charcoal-900 rounded-2xl">
-        <div class="w-12 h-12 rounded-full bg-charcoal-900 flex items-center justify-center border border-charcoal-850">
-          <i data-lucide="image" class="w-6 h-6 text-charcoal-600"></i>
+        <!-- History Grid -->
+        <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Rendered dynamically -->
         </div>
-        <div>
-          <h3 class="font-display font-bold text-base text-charcoal-250">No uploaded assets found</h3>
-          <p class="text-xs text-charcoal-500 max-w-xs mx-auto mt-1 leading-relaxed">
-            Configure your Cloudinary credentials and drop files inside the upload box to build your bookmark list.
-          </p>
+
+        <!-- Empty state -->
+        <div id="galleryEmpty" class="hidden py-16 text-center flex flex-col items-center justify-center gap-3 bg-charcoal-900/20 border border-charcoal-900 rounded-2xl">
+          <div class="w-12 h-12 rounded-full bg-charcoal-900 flex items-center justify-center border border-charcoal-850">
+            <i data-lucide="image" class="w-6 h-6 text-charcoal-600"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-base text-charcoal-200">No uploaded assets found</h3>
+            <p class="text-xs text-charcoal-500 max-w-xs mx-auto mt-1 leading-relaxed font-sans">
+              Once you configure your settings and drop files above, your upload history list will show up here.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -250,15 +266,15 @@
   </main>
 
   <!-- Footer -->
-  <footer class="py-6 border-t border-charcoal-900 bg-charcoal-950 mt-12 text-center text-xs text-charcoal-500">
+  <footer class="py-6 border-t border-charcoal-900 bg-charcoal-950 mt-12 text-center text-xs text-charcoal-500 font-sans">
     <div class="max-w-7xl mx-auto px-6">
       <p>Cloudinary Upload Utility &copy; 2026. Standalone dashboard webpage.</p>
     </div>
   </footer>
 
   <script>
-    // Config values
-    let cloudName = localStorage.getItem("cloudinary_cloud_name") || "";
+    // Config values (Defaulting to the website's verified cloud name "ddfuc0ktg")
+    let cloudName = localStorage.getItem("cloudinary_cloud_name") || "ddfuc0ktg";
     let uploadPreset = localStorage.getItem("cloudinary_upload_preset") || "";
     
     // UI Elements
@@ -295,8 +311,11 @@
     // Save Settings
     settingsForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      cloudName = cloudNameInput.value.trim();
+      // Remove spaces or URL characters from Cloud Name
+      cloudName = cloudNameInput.value.replace(/\s+/g, '').trim();
       uploadPreset = uploadPresetInput.value.trim();
+      cloudNameInput.value = cloudName;
+      
       localStorage.setItem("cloudinary_cloud_name", cloudName);
       localStorage.setItem("cloudinary_upload_preset", uploadPreset);
       
@@ -519,8 +538,14 @@
         } else {
           try {
             const res = JSON.parse(xhr.responseText);
-            alertError.classList.remove("hidden");
-            errorMsg.textContent = res.error?.message || "Upload failed.";
+            // Help explain "Unknown API key" errors
+            if (res.error?.message === "Unknown API key" || res.error?.message.includes("API key")) {
+              alertError.classList.remove("hidden");
+              errorMsg.innerHTML = `<strong>Error: Unknown API key.</strong> This means your <strong>Cloud Name</strong> (${cloudName}) is incorrect or has spaces. In Cloudinary, a Cloud Name cannot have spaces. Based on your site, try setting it to: <code class="bg-black/40 px-1 py-0.5 rounded font-mono text-gold-400">ddfuc0ktg</code>.`;
+            } else {
+              alertError.classList.remove("hidden");
+              errorMsg.textContent = res.error?.message || "Upload failed.";
+            }
           } catch {
             alertError.classList.remove("hidden");
             errorMsg.textContent = `Server error: Status ${xhr.status}`;
