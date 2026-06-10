@@ -4,15 +4,15 @@
   "description": "Salt-of-the-earth family restaurant with butcher's choice cuts and generational family recipes.",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/ddfuc0ktg/image/upload/w_192,h_192,c_fill/v1780074150/zxm9nnoytf8xiqnfpnxx.jpg",
+      "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://res.cloudinary.com/ddfuc0ktg/image/upload/w_512,h_512,c_fill/v1780074150/zxm9nnoytf8xiqnfpnxx.jpg",
+      "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
