@@ -15,6 +15,11 @@ export default defineConfig(({ mode }) => {
         name: 'cloudinary-assets-sync-plugin',
         configureServer(server) {
           server.middlewares.use(async (req, res, next) => {
+            const urlPath = req.url ? req.url.split('?')[0].split('#')[0] : '';
+            if (urlPath === '/admin' || urlPath === '/dashboard' || urlPath === '/admin/' || urlPath === '/dashboard/') {
+              req.url = '/index.html';
+            }
+
             if (req.url === '/api/update-asset' && req.method === 'POST') {
               let body = '';
               req.on('data', chunk => {
