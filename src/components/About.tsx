@@ -40,7 +40,6 @@ function CarouselCard({ imageUrl, altText }: CarouselCardProps) {
       <img
         src={imageUrl}
         alt={altText}
-        crossOrigin="anonymous"
         loading="lazy"
       />
     </div>
