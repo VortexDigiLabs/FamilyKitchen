@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,17 +10,58 @@ import AdminDashboard from "./components/AdminDashboard";
 import { CartProvider } from "./context/CartContext";
 import { ThemeProvider } from "./context/ThemeContext";
 import { AssetProvider } from "./context/AssetContext";
-import { Settings } from "lucide-react";
 
 export default function App() {
-  const [isAdminOpen, setIsAdminOpen] = useState(false);
+  // Simple native router
+  const [path, setPath] = useState(() => window.location.pathname.toLowerCase());
+  const [hash, setHash] = useState(() => window.location.hash.toLowerCase());
+
+  useEffect(() => {
+    const handleUrlChange = () => {
+      setPath(window.location.pathname.toLowerCase());
+      setHash(window.location.hash.toLowerCase());
+    };
+    
+    window.addEventListener("popstate", handleUrlChange);
+    window.addEventListener("hashchange", handleUrlChange);
+    return () => {
+      window.removeEventListener("popstate", handleUrlChange);
+      window.removeEventListener("hashchange", handleUrlChange);
+    };
+  }, []);
+
+  const isDashboardRoute = 
+    path === "/admin" || 
+    path === "/dashboard" || 
+    hash === "#admin" || 
+    hash === "#dashboard";
+
+  const navigateToAdmin = () => {
+    window.history.pushState({}, "", "/admin");
+    window.dispatchEvent(new Event("popstate"));
+  };
+
+  const navigateToHome = () => {
+    window.history.pushState({}, "", "/");
+    window.dispatchEvent(new Event("popstate"));
+  };
+
+  if (isDashboardRoute) {
+    return (
+      <ThemeProvider>
+        <AssetProvider>
+          <AdminDashboard onBackToHome={navigateToHome} />
+        </AssetProvider>
+      </ThemeProvider>
+    );
+  }
 
   return (
     <ThemeProvider>
       <AssetProvider>
         <CartProvider>
           <div className="min-h-screen bg-charcoal-950 flex flex-col relative">
-            <Navbar onOpenAdmin={() => setIsAdminOpen(true)} />
+            <Navbar onOpenAdmin={navigateToAdmin} />
             <CartDrawer />
             <QuantityStepperOverlay />
             <main className="flex-grow">
@@ -29,21 +70,6 @@ export default function App() {
               <Menu />
             </main>
             <Footer />
-
-            {/* Admin Dashboard Gear Button (Bottom Left) */}
-            <button
-              onClick={() => setIsAdminOpen(true)}
-              className="fixed bottom-10 left-10 z-40 p-4 rounded-full border bg-charcoal-900/90 border-gold-400/30 hover:border-gold-400 text-gold-400 hover:text-white transition-all shadow-xl hover:scale-110 flex items-center justify-center group"
-              style={{ backdropFilter: "blur(8px)" }}
-              title="Open Asset Dashboard"
-            >
-              <Settings className="w-5 h-5 transition-transform group-hover:rotate-45 duration-500" />
-            </button>
-
-            {/* Admin Dashboard Sidebar Overlay */}
-            {isAdminOpen && (
-              <AdminDashboard onClose={() => setIsAdminOpen(false)} />
-            )}
           </div>
         </CartProvider>
       </AssetProvider>
