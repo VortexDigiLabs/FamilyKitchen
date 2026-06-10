@@ -86,7 +86,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional street food hollowed-out quarter loaf bread filled with chips, egg, Russian sausage, and melted cheese.",
     price: 35,
     category: "Kota",
-    image: "/kota_no_chips.png"
+    image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781096345/family_kitchen_manual/zvu7r2xgxjzz4qn6k8bb.jpg"
   },
   {
     id: "95",
@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
     description: "Loaded quarter loaf bread filled with chips, polony, Russian sausage, and cheese. Served with Chips on the Side.",
     price: 55,
     category: "Kota",
-    image: "/kota_with_chips.png"
+    image: "https://res.cloudinary.com/ddfuc0ktg/image/upload/v1781096324/family_kitchen_manual/ijile7zefhjbcbrjky73.png"
   },
 
   // === RUSSIANS ===
